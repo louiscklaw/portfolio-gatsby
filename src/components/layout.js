@@ -6,20 +6,32 @@ import Footer from './footer'
 
 import GlobalContext from '../contexts/GlobalContext'
 
-import "./desktop-layout.css"
+import desktop_layout from './desktop-layout.module.css'
+import mobile_layout from './mobile-layout.module.css'
+
+import "./layout.css"
 
 function Layout({children}) {
+  const {isMobile} = React.useContext(GlobalContext)
+  let target_layout = isMobile()? mobile_layout:desktop_layout
+
+  React.useEffect(()=>{
+    console.log(isMobile())
+    console.log(target_layout)
+  })
+
   return(
     <>
-      <div className="main-container">
-        <div className="left-side-bar">
+      <div className={target_layout.mainContainer}>
+        <div className={target_layout.leftSideBar}>
           <LeftSideBar />
         </div>
-        <main>
+
+        <main className={target_layout.projectItemContainer}>
           {children}
         </main>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

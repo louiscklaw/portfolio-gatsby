@@ -34,28 +34,6 @@ $input-shadow: none;
   height: 25%;
 }
 
-.project-item-container {
-  background-color: red;
-  height: 100%;
-  width: 80vw;
-
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.left-side-bar {
-  background-color: gold;
-  height: 100vh;
-  width: 20vw;
-}
-
-.main-container {
-  background-color: cyan;
-
-  display: flex;
-  flex-flow: row wrap;
-}
-
 html {
   overflow-y: hidden;
   overflow-x: unset;

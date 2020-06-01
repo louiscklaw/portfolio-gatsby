@@ -10,12 +10,6 @@ import SEO from "../components/seo"
 function IndexPage() {
   const test=React.useContext(GlobalContext)
 
-  React.useEffect(() => {
-    // console.log(test)
-    // console.log(test.helloworldFunc())
-    // console.log(test.isMobile())
-  })
-
   return(
     <Layout>
       <SEO title="Home" />

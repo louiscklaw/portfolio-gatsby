@@ -25,8 +25,8 @@ class GlobalContextProvider extends React.Component {
   }
 
   isMobile() {
-    const { windowInnerWidth, windowInnerHeight } = this.state;
-    return windowInnerWidth < MAX_MOBILE_SCREEN_WIDTH;
+    if (typeof window == "undefined") return false
+    return window.innerWidth < MAX_MOBILE_SCREEN_WIDTH
 
   }
 
@@ -52,6 +52,7 @@ class GlobalContextProvider extends React.Component {
       windowInnerHeight: this.getWindowHeight(window),
       isMobile: this.checkIsMobile(window)
     })
+    console.log(this.state)
 
     window.addEventListener("resize", () => {
       this.setState({

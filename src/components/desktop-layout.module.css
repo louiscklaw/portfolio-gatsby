@@ -1,0 +1,22 @@
+
+.project-item-container {
+  height: 100%;
+  width: 80vw;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.left-side-bar {
+  background-color: gold;
+  height: 100vh;
+  width: 20vw;
+}
+
+.main-container {
+  background-color: cyan;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: row wrap;
+}

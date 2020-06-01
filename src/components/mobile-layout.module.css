@@ -1,0 +1,23 @@
+
+.project-item-container {
+  width: 100vw;
+
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.left-side-bar {
+  background-color: gold;
+  height: 20vh;
+  width: 100vw;
+}
+
+.main-container {
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-flow: column wrap;
+}
