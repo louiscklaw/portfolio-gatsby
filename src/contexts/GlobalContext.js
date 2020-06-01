@@ -1,5 +1,7 @@
 import React from "react"
 
+import {MAX_MOBILE_SCREEN_WIDTH} from '../config'
+
 const defaultState = {
   helloworld: false,
   windowInnerWidth:0,
@@ -24,23 +26,23 @@ class GlobalContextProvider extends React.Component {
 
   isMobile() {
     const { windowInnerWidth, windowInnerHeight } = this.state;
-    return windowInnerWidth < 501;
+    return windowInnerWidth < MAX_MOBILE_SCREEN_WIDTH;
 
   }
 
   getWindowWidth = (window) => {
-    return typeof window !== "undefined" ? window.innerWidth: 0
+    if (typeof window == "undefined") return 0
+    return window.innerWidth
   }
 
   getWindowHeight = (window) => {
-    return typeof window !== "undefined" ? window.innerHeight: 0
+    if (typeof window !== "undefined") return 0
+    return window.innerHeight
   }
 
   checkIsMobile = (window) => {
     if (typeof window == "undefined") return false
-
     return window.innerWidth < 501
-
   }
 
   componentDidMount = () => {
