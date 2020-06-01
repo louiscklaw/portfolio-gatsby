@@ -9,12 +9,11 @@ import SEO from "../components/seo"
 
 function IndexPage() {
   const test=React.useContext(GlobalContext)
-  console.log(test)
-
 
   React.useEffect(() => {
-    console.log(test)
-    console.log(test.helloworldFunc())
+    // console.log(test)
+    // console.log(test.helloworldFunc())
+    // console.log(test.isMobile())
   })
 
   return(
