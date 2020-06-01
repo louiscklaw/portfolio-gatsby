@@ -1,16 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 
-// import DesktopLayout from "../components/desktop-layout"
-import Layout from '../components/layout'
+import Layout from "../components/layout"
+// import Layout from "../components/desktop-layout"
+import ProjectListContent from '../components/project-list-content'
 
+import GlobalContext from '../contexts/GlobalContext'
 import SEO from "../components/seo"
 
 function IndexPage() {
-
   return(
     <Layout>
-      <SEO title="Home" />
+      <SEO title="my project list" />
+      <ProjectListContent />
     </Layout>
   )
 }

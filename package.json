@@ -36,7 +36,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "css-build": "node-sass --omit-source-map-url"
+    "_css-build": "node-sass --omit-source-map-url"
   },
   "repository": {
     "type": "git",
