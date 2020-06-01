@@ -1,21 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+// import DesktopLayout from "../components/desktop-layout"
+import Layout from '../components/layout'
+import Main from '../components/main.js'
+
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+function IndexPage() {
 
-    <div>
-      helloworld
-    </div>
-
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  return(
+    <Layout>
+      <SEO title="Home" />
+    </Layout>
+  )
+}
 
 export default IndexPage

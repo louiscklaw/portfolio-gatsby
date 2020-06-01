@@ -6554,6 +6554,18 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.project-item {
+  background-color: pink;
+  width: 25%;
+  height: 25%; }
+
+.project-item-container {
+  background-color: red;
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap; }
+
 .left-side-bar {
   background-color: gold;
   height: 100vh;
@@ -6565,5 +6577,5 @@ label.panel-block {
   flex-flow: row wrap; }
 
 html {
-  overflow-y: unset;
+  overflow-y: hidden;
   overflow-x: unset; }
