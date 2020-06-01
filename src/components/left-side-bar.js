@@ -1,23 +1,18 @@
 import React from 'react'
-import {Link} from 'gatsby'
+
+import TopNav from './top-nav'
+import MiddleNav from './middle-nav'
+import BottomNav from './bottom-nav'
+
 
 class LeftSideBar extends React.Component{
   render(){
     return(
-      <ul>
-        <li>
-          <Link to="/project-list/" className="button">
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="/about/" className="button">
-            about
-          </Link>
-        </li>
-
-      </ul>
-
+      <>
+        <TopNav></TopNav>
+        <MiddleNav></MiddleNav>
+        <BottomNav></BottomNav>
+      </>
     )
   }
 }

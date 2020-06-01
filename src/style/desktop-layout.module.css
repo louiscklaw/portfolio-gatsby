@@ -1,82 +1,65 @@
 .greetings {
   font-size: 2em;
-  color: rgb(255,255,255);
+  color: white;
   text-align: center;
-  padding-top: 3em;
-}
+  padding-top: 3em; }
 
 .avatar-img {
   width: 115px;
   height: 115px;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
-.avatar-container{
+.avatar-container {
   display: block;
   width: 100%;
   display: flex;
   flex-flow: row;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.connection-list a{
+.connection-list a {
   color: white;
-  padding-left:2px;
-  padding-right:2px;
-}
+  padding-left: 2px;
+  padding-right: 2px; }
 
 .connection-list {
   display: inline-flex;
-  list-style: outside none none;
-}
+  list-style: outside none none; }
 
 .bottom-nav {
   text-align: center;
-  height: 33%;
-}
+  height: 33%; }
 
 .middle-nav {
   text-align: center;
-  height: 34%;
-}
+  height: 34%; }
 
 .top-nav {
   background-color: red;
-  height: 33%;
-}
+  height: 33%; }
 
-
-.project-item{
+.project-item {
   background-color: pink;
   width: 25%;
-  height: 25%;
-}
+  height: 25%; }
 
 .project-item-container {
-  background-color:grey;
-
+  background-color: grey;
   height: 100%;
   width: 80vw;
-
   display: flex;
-  flex-flow: row wrap;
-}
+  flex-flow: row wrap; }
 
 .left-side-bar {
   background-color: gold;
   height: 100%;
-  width: 20vw;
-}
+  width: 20vw; }
 
 .main-container {
   background-color: cyan;
   height: 100vh;
-
   display: flex;
-  flex-flow: row;
-}
+  flex-flow: row; }
 
 html {
   overflow-y: unset;
-  overflow-x: unset;
-}
+  overflow-x: unset; }

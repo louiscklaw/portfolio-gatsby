@@ -6,10 +6,10 @@ import Footer from './footer'
 
 import GlobalContext from '../contexts/GlobalContext'
 
-import desktop_layout from './desktop-layout.module.css'
-import mobile_layout from './mobile-layout.module.css'
+import desktop_layout from '../style/desktop-layout.module.css'
+import mobile_layout from '../style/mobile-layout.module.css'
+import "../style/layout.css"
 
-import "./layout.css"
 
 function Layout({children}) {
   const {isMobile} = React.useContext(GlobalContext)

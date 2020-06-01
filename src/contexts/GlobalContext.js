@@ -13,8 +13,6 @@ const defaultState = {
 const GlobalContext = React.createContext(defaultState)
 
 class GlobalContextProvider extends React.Component {
-  // state = defaultState
-
   constructor(props){
     super(props)
     this.state=defaultState

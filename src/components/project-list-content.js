@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 import GlobalContext from '../contexts/GlobalContext'
 
-import desktop_layout from './desktop-layout.module.css'
-import mobile_layout from './mobile-layout.module.css'
+import desktop_layout from '../style/desktop-layout.module.css'
+import mobile_layout from '../style/mobile-layout.module.css'
 
 function ProjectListContent() {
   const {isMobile} = React.useContext(GlobalContext)
