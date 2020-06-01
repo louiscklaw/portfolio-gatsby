@@ -18,7 +18,3 @@
   width: 100vw;
   display: flex;
   flex-flow: column; }
-
-html {
-  overflow-y: unset;
-  overflow-x: unset; }

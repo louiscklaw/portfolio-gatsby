@@ -15,11 +15,6 @@ function Layout({children}) {
   const {isMobile} = React.useContext(GlobalContext)
   let target_layout = isMobile()? mobile_layout:desktop_layout
 
-  React.useEffect(()=>{
-    console.log(isMobile())
-    console.log(target_layout)
-  })
-
   return(
     <>
       <div className={target_layout.mainContainer}>
@@ -27,9 +22,8 @@ function Layout({children}) {
           <LeftSideBar />
         </div>
 
-        <main className={target_layout.projectItemContainer}>
-          {children}
-        </main>
+        {children}
+
       </div>
       {/* <Footer /> */}
     </>

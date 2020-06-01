@@ -27,14 +27,3 @@ $input-shadow: none;
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";
-
-.project-item{
-  background-color: pink;
-  width: 25%;
-  height: 25%;
-}
-
-html {
-  overflow-y: hidden;
-  overflow-x: unset;
-}

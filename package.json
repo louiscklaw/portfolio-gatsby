@@ -36,7 +36,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "css-build": "node-sass --omit-source-map-url src/sass/layout.scss src/components/layout.css",
-    "css-watch": "npm run css-build -- --watch"
+    "css-desktop-build": "node-sass --omit-source-map-url src/sass/desktop-layout.scss src/components/desktop-layout.module.css",
+    "css-mobile-build": "node-sass --omit-source-map-url src/sass/mobile-layout.scss src/components/mobile-layout.module.css",
+    "css-build-all": "npm run css-build && npm run css-mobile-build && npm run css-desktop-build"
   },
   "repository": {
     "type": "git",

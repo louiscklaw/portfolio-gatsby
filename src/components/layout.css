@@ -6553,12 +6553,3 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
-.project-item {
-  background-color: pink;
-  width: 25%;
-  height: 25%; }
-
-html {
-  overflow-y: hidden;
-  overflow-x: unset; }

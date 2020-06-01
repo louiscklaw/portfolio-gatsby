@@ -1,26 +1,35 @@
-.project-item {
+
+.project-item{
   background-color: pink;
   width: 25%;
-  height: 25%; }
+  height: 25%;
+}
 
 .project-item-container {
-  background-color: grey;
+  background-color:grey;
+
   height: 100%;
   width: 80vw;
+
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+}
 
 .left-side-bar {
   background-color: gold;
   height: 100%;
-  width: 20vw; }
+  width: 20vw;
+}
 
 .main-container {
   background-color: cyan;
   height: 100vh;
+
   display: flex;
-  flex-flow: row; }
+  flex-flow: row;
+}
 
 html {
   overflow-y: unset;
-  overflow-x: unset; }
+  overflow-x: unset;
+}
