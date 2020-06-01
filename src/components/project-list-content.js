@@ -13,8 +13,8 @@ function ProjectListContent() {
   return(
     <>
       <ul className={target_layout.projectItemContainer}>
-        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
+        <Link to="/trading-view-dashboard/" className={target_layout.projectItem}>
+          <li >trading view dashboard</li>
         </Link>
         <Link to="/project1/" className={target_layout.projectItem}>
           <li >project 1</li>
