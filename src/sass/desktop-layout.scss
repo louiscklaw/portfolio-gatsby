@@ -1,6 +1,6 @@
 .greetings {
   font-size: 2em;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding-top: 3em;
 }
@@ -11,7 +11,7 @@
   border-radius: 50%;
 }
 
-.avatar-container{
+.avatar-container {
   display: block;
   width: 100%;
   display: flex;
@@ -19,10 +19,10 @@
   justify-content: center;
 }
 
-.connection-list a{
+.connection-list a {
   color: white;
-  padding-left:2px;
-  padding-right:2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .connection-list {
@@ -46,14 +46,14 @@
 }
 
 
-.project-item{
+.project-item {
   background-color: pink;
   width: 25%;
   height: 25%;
 }
 
 .project-item-container {
-  background-color:grey;
+  background-color: grey;
 
   height: 100%;
   width: 80vw;
@@ -66,6 +66,9 @@
   background-color: gold;
   height: 100%;
   width: 20vw;
+
+  display:flex;
+  flex-flow: column;
 }
 
 .main-container {

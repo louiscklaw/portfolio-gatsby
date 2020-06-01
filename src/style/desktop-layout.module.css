@@ -52,7 +52,9 @@
 .left-side-bar {
   background-color: gold;
   height: 100%;
-  width: 20vw; }
+  width: 20vw;
+  display: flex;
+  flex-flow: column; }
 
 .main-container {
   background-color: cyan;

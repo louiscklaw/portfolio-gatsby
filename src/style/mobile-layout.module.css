@@ -1,5 +1,52 @@
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px; }
+
+.bottom-nav {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  order: 1; }
+  .bottom-nav .connection-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .bottom-nav .last-build {
+    display: none; }
+  .bottom-nav .simple-credit {
+    display: none; }
+  .bottom-nav .source-link {
+    display: none; }
+  .bottom-nav .build-info {
+    display: none; }
+
+.middle-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 25%;
+  order: 2; }
+  .middle-nav ul {
+    display: flex;
+    justify-content: space-around; }
+
 .top-nav {
-  background-color: blue; }
+  background-color: blue;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  order: 0; }
+  .top-nav h1 {
+    order: 1;
+    padding: 30px;
+    height: 50%; }
 
 .project-item {
   background-color: pink;
@@ -13,8 +60,10 @@
 
 .left-side-bar {
   background-color: gold;
-  height: 20vh;
-  width: 100%; }
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column; }
 
 .main-container {
   background-color: cyan;

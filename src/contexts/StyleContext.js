@@ -46,7 +46,8 @@ class StyleContextProvider extends React.Component {
     return (
       <StyleContext.Provider
         value={{
-          ...this.state
+          ...this.state,
+          isMobile: this.isMobile
         }}
       >
         {this.props.children}
