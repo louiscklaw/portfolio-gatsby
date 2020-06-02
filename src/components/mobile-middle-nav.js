@@ -20,7 +20,7 @@ function MobileMiddleNav(){
           </Link>
         </li>
         <li>
-          <Link to="/project-list/" className="is-text">
+          <Link to="/credits/" className="is-text">
             credits
           </Link>
         </li>

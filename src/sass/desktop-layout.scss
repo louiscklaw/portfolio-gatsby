@@ -101,7 +101,6 @@ $project-detail-link-color: #2c3e50;
   height: 25%;
 
   &:hover .projectLink {
-    background-color: green;
     display: block;
   }
 
@@ -116,8 +115,7 @@ $project-detail-link-color: #2c3e50;
 }
 
 .project-item-container {
-  background-color: grey;
-
+  background-color: $project-detail-background-color;
   height: 100%;
   width: 100%;
   padding-left: 20vw;
@@ -233,7 +231,7 @@ $project-detail-link-color: #2c3e50;
       }
     }
 
-    color: white;
+    color: $portfolio-text-color;
     font-weight: bold;
     font-family: Montserrat,
     sans-serif;
