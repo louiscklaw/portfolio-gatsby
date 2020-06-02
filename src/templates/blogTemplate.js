@@ -12,7 +12,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <div className="blog-post-container" style={{width: '80%', margin:'auto', paddingTop:'50px'}}>
+      <div>
         <div className="blog-post">
           <BackToCatalogue />
           <h1>{frontmatter.title}</h1>

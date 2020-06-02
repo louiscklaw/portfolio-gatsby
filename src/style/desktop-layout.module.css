@@ -1,63 +1,24 @@
+.project-detail-container {
+  background-color: yellowgreen;
+  padding-left: 20vw; }
+  .project-detail-container .project-detail {
+    padding: 8%; }
+    .project-detail-container .project-detail .project-detail-head {
+      background-color: brown;
+      display: inline-flex;
+      width: 100%;
+      flex-flow: row;
+      justify-content: space-between;
+      padding-bottom: 50px; }
+    .project-detail-container .project-detail .project-detail-footer {
+      background-color: pink;
+      padding-top: 5%; }
+
 .greetings {
   font-size: 2em;
   color: white;
   text-align: center;
   padding-top: 3em; }
-
-.avatar-img {
-  width: 115px;
-  height: 115px;
-  border-radius: 50%; }
-
-.avatar-container {
-  display: block;
-  width: 100%;
-  display: flex;
-  flex-flow: row;
-  justify-content: center; }
-
-.bottom-nav {
-  height: 33%; }
-  .bottom-nav .connection-list {
-    height: 25%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center; }
-    .bottom-nav .connection-list ul {
-      display: inline-flex;
-      list-style: outside none none;
-      margin: auto; }
-      .bottom-nav .connection-list ul li {
-        padding: 5px; }
-  .bottom-nav .build-info {
-    height: 10%;
-    text-align: center; }
-  .bottom-nav .source-link {
-    height: 10%;
-    text-align: center; }
-  .bottom-nav .simple-credit {
-    text-align: center; }
-  .bottom-nav .last-build {
-    height: 10%;
-    text-align: center; }
-
-.middle-nav {
-  color: white;
-  font-weight: bold;
-  font-family: Montserrat,sans-serif;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  height: 34%; }
-  .middle-nav ul {
-    list-style: outside none none; }
-    .middle-nav ul li {
-      padding: 5px 0px; }
-
-.top-nav {
-  background-color: red;
-  height: 33%; }
 
 .project-item {
   background-color: pink;
@@ -67,7 +28,8 @@
 .project-item-container {
   background-color: grey;
   height: 100%;
-  width: 80vw;
+  width: 100%;
+  padding-left: 20vw;
   display: flex;
   flex-flow: row wrap; }
 
@@ -76,7 +38,58 @@
   height: 100%;
   width: 20vw;
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
+  position: fixed; }
+  .left-side-bar .bottom-nav {
+    height: 33%; }
+    .left-side-bar .bottom-nav .connection-list {
+      height: 25%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center; }
+      .left-side-bar .bottom-nav .connection-list ul {
+        display: inline-flex;
+        list-style: outside none none;
+        margin: auto; }
+        .left-side-bar .bottom-nav .connection-list ul li {
+          padding: 5px; }
+    .left-side-bar .bottom-nav .build-info {
+      height: 10%;
+      text-align: center; }
+    .left-side-bar .bottom-nav .source-link {
+      height: 10%;
+      text-align: center; }
+    .left-side-bar .bottom-nav .simple-credit {
+      text-align: center; }
+    .left-side-bar .bottom-nav .last-build {
+      height: 10%;
+      text-align: center; }
+  .left-side-bar .middle-nav {
+    color: white;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: 34%; }
+    .left-side-bar .middle-nav ul {
+      list-style: outside none none; }
+      .left-side-bar .middle-nav ul li {
+        padding: 5px 0px; }
+  .left-side-bar .top-nav {
+    background-color: red;
+    height: 33%; }
+  .left-side-bar .avatar-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%; }
+  .left-side-bar .avatar-container {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center; }
 
 .main-container {
   background-color: cyan;
