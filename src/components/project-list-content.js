@@ -1,81 +1,102 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import GlobalContext from '../contexts/GlobalContext'
+import StyleContext from '../contexts/StyleContext'
 
-import desktop_layout from '../style/desktop-layout.module.css'
-import mobile_layout from '../style/mobile-layout.module.css'
+import ProjectListTile from './project-list-tile'
 
 function ProjectListContent() {
-  const {isMobile} = React.useContext(GlobalContext)
-  let target_layout = isMobile()? mobile_layout:desktop_layout
+  const {target_layout} = React.useContext(StyleContext)
 
   return(
     <>
       <ul className={target_layout.projectItemContainer}>
-        <Link to="/trading-view-dashboard/" className={target_layout.projectItem}>
-          <li style={{backgroundImage:'url(/trading-view-screenshot_thumbnail.png)'}}>
-            <div className={target_layout.projectLink}>
-              <div className={target_layout.rightArrow}>
-                <i className="fas fa-arrow-circle-right fa-2x"></i>
-              </div>
-              <div className={target_layout.projectTitle}>
-                trading view dashboard
-              </div>
-            </div>
-          </li>
-        </Link>
-        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>        <Link to="/project1/" className={target_layout.projectItem}>
-          <li >project 1</li>
-        </Link>
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/appium-behave-notes/"
+          bg_image="/appiumbehavenotes_thumbnail.png"
+          title="appium behave notes"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+        <ProjectListTile
+          link_to="/trading-view-dashboard/"
+          bg_image="/trading-view-screenshot_thumbnail.png"
+          title="trading view dashboard"
+        />
+
+
+
+
+
+
       </ul>
     </>
   )
