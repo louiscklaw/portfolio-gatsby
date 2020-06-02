@@ -1,0 +1,52 @@
+# https://docs.travis-ci.com/user/docker/
+# https://docs.travis-ci.com/user/environment-variables/
+# https://docs.travis-ci.com/user/job-lifecycle/
+
+# You can import up to 25 other configs in total.
+os: linux
+
+language: node_js
+
+node_js:
+  - 10
+cache:
+  - npm
+  - pip
+
+jobs:
+  include:
+    - stage: Build
+      script:
+        - scripts/build.sh
+
+    - stage: Deploy
+      script:
+        - npm install -g firebase-tools firebase-functions firebase-admin
+        # - node ./scripts/update_build_info.js
+        - scripts/build.sh
+
+      deploy:
+        # production deploy
+        - provider: script
+          skip_cleanup: true
+          script: firebase deploy --project $FIREBASE_PROJECT --only hosting:production --token $FIREBASE_TOKEN --non-interactive
+          on:
+            all_branches: true
+            condition: $TRAVIS_BRANCH = "master"
+
+    - stage: Merge
+      script:
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
+        - bash merge_if_success.sh
+
+stages:
+  - Unit_test
+  - Test
+  - Build
+  - Deploy
+  - Integration_to_other_repo
+  - Publish_dashboard
+  - Merge
+
+import:
+  - credentials.yml
