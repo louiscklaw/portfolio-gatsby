@@ -1,20 +1,18 @@
+$portfolio-accent-color: #2c3e50;
+$portfolio-text-color: #ecf0f1;
+
 .project-detail-container {
   padding: 0px 2% 20% 2%;
 
   .project-detail-head {
-
     background-color: brown;
     display: inline-flex;
     width: 100%;
     flex-flow: row;
     justify-content: space-between;
-
     padding: 5% 0px;
   }
-
-
 }
-
 
 .project-detail-end {
   text-align: center;
@@ -39,11 +37,10 @@
   order: 1;
 
   .connection-list {
-    width: 100%;
 
     ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
   }
 
@@ -82,7 +79,7 @@
 }
 
 .top-nav {
-  background-color: blue;
+  background-color: $portfolio-accent-color;
 
   display: flex;
   flex-flow: row;
@@ -93,8 +90,10 @@
 
   h1 {
     order: 1;
-    padding: 30px;
+    padding-left: 3%;
     height: 50%;
+    font-size: 2em;
+    color: $portfolio-text-color
   }
 
   // margin-top: 30px;
@@ -142,7 +141,7 @@
 }
 
 .left-side-bar {
-  background-color: gold;
+  background-color: $portfolio-accent-color;
   height: 25vh;
   width: 100%;
 
