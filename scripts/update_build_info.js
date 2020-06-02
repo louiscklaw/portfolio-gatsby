@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const MONTH_TEXT_LOOKUP = "Jan Feb Mar Apr May Jum Jul Aug Sep Oct Nov Dec".split(
+const MONTH_TEXT_LOOKUP = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(
   " "
 );
 
