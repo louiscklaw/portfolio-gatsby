@@ -12,7 +12,7 @@ function ProjectListTile({link_to, bg_image, title}){
         <div className={target_layout.projectLink}>
           <div className={target_layout.backgroundDimmer}>
             <div className={target_layout.rightArrow}>
-              <i className="fas fa-arrow-circle-right fa-2x"></i>
+              <i className="fas fa-arrow-circle-right fa-3x"></i>
             </div>
             <div className={target_layout.projectTitle}>
               {title}

@@ -87,7 +87,8 @@
         .project-item-container li .project-link .background-dimmer .right-arrow {
           height: 20%; }
         .project-item-container li .project-link .background-dimmer .project-title {
-          height: 20%; }
+          height: 20%;
+          font-size: 1.2em; }
 
 .left-side-bar {
   background-color: #2c3e50;
