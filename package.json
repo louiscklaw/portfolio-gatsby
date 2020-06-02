@@ -39,7 +39,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "_css-build": "node-sass --omit-source-map-url"
+    "_css-build": "node-sass --omit-source-map-url",
+    "css-develop": "nodemon -w src -e scss --exec \"scripts/build_scss.sh\""
   },
   "repository": {
     "type": "git",
