@@ -1,27 +1,62 @@
 $portfolio-accent-color: #2c3e50;
 $portfolio-text-color: #ecf0f1;
 
+$project-detail-background-color: #ecf0f1;
+$project-detail-text-color: #2c3e50;
+$project-detail-link-color: #2c3e50;
+
 
 .project-detail-container {
-  background-color: yellowgreen;
+  background-color: $project-detail-background-color;
+  color: $project-detail-text-color;
+
   padding-left: 20vw;
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-top: 5%;
+    font-weight: bold;
+  }
+
+  a{
+    color: $project-detail-link-color;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a:hover{
+    color: $project-detail-link-color;
+  }
 
   .project-detail {
     padding: 8%;
 
     .project-detail-head {
-      background-color: brown;
-
       display: inline-flex;
       width: 100%;
       flex-flow: row;
       justify-content: space-between;
+      align-items: center;
 
-      padding-bottom: 50px;
+      padding-bottom: 10%;
+
+      .project-detail-date{
+        font-size: 0.8em;
+      }
+
     }
 
     .project-detail-footer {
-      background-color: pink;
+      font-size: 1.5em;
       padding-top: 5%;
     }
 

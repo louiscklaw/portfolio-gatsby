@@ -1,17 +1,35 @@
 .project-detail-container {
-  background-color: yellowgreen;
+  background-color: #ecf0f1;
+  color: #2c3e50;
   padding-left: 20vw; }
+  .project-detail-container h1 {
+    font-size: 1.8em; }
+  .project-detail-container h2 {
+    font-size: 1.4em; }
+  .project-detail-container h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-top: 5%;
+    font-weight: bold; }
+  .project-detail-container a {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold; }
+  .project-detail-container a:hover {
+    color: #2c3e50; }
   .project-detail-container .project-detail {
     padding: 8%; }
     .project-detail-container .project-detail .project-detail-head {
-      background-color: brown;
       display: inline-flex;
       width: 100%;
       flex-flow: row;
       justify-content: space-between;
-      padding-bottom: 50px; }
+      align-items: center;
+      padding-bottom: 10%; }
+      .project-detail-container .project-detail .project-detail-head .project-detail-date {
+        font-size: 0.8em; }
     .project-detail-container .project-detail .project-detail-footer {
-      background-color: pink;
+      font-size: 1.5em;
       padding-top: 5%; }
 
 .greetings {

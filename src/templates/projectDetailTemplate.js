@@ -24,7 +24,7 @@ export default function Template({
           <div className={target_layout.projectDetailHead}>
             <BackToCatalogue />
             <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
+            <h2 className={target_layout.projectDetailDate}>{frontmatter.date}</h2>
           </div>
 
           <div className={target_layout.projectDetailBody}>
