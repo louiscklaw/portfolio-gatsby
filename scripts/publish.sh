@@ -5,6 +5,6 @@ yarn
 yarn clean
 
 # build bulma css
-yarn css-build
+scripts/build_scss.sh
 
 yarn build
