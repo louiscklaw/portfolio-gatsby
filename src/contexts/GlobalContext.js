@@ -50,7 +50,6 @@ class GlobalContextProvider extends React.Component {
       windowInnerHeight: this.getWindowHeight(window),
       isMobile: this.checkIsMobile(window)
     })
-    console.log(this.state)
 
     window.addEventListener("resize", () => {
       this.setState({
@@ -59,7 +58,6 @@ class GlobalContextProvider extends React.Component {
         windowInnerHeight: this.getWindowHeight(window),
         isMobile: this.checkIsMobile(window)
       })
-      console.log(this.state)
     });
 
     // this.updateWidthAndHeight();
