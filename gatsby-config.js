@@ -3,6 +3,7 @@ module.exports = {
     title: `louiscklaw portfolio`,
     description: `This will be my great portfolio website`,
     author: `@louiscklaw`,
+    siteUrl: `https://louiscklaw.github.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,6 +36,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`
   ],
 }
