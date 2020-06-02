@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import BackToCatalogue from '../components/back_to_catalogue'
+import ProjectDetailEnd from '../components/project-detail-end'
 
 import Layout from '../components/layout'
 
@@ -11,14 +12,15 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const {target_layout} = React.useContext(StyleContext)
-  console.log(target_layout)
-
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+
   return (
     <Layout>
       <div className={target_layout.projectDetailContainer}>
+
         <div className={target_layout.projectDetail}>
+
           <div className={target_layout.projectDetailHead}>
             <BackToCatalogue />
             <h1>{frontmatter.title}</h1>
@@ -32,11 +34,14 @@ export default function Template({
             />
           </div>
 
+          <ProjectDetailEnd/>
+
           <div className={target_layout.projectDetailFooter}>
             <BackToCatalogue />
           </div>
 
         </div>
+
       </div>
     </Layout>
   )

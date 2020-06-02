@@ -1,3 +1,17 @@
+.project-detail-container {
+  padding: 0px 2% 20% 2%; }
+  .project-detail-container .project-detail-head {
+    background-color: brown;
+    display: inline-flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 5% 0px; }
+
+.project-detail-end {
+  text-align: center;
+  padding-top: 10%; }
+
 .avatar-img {
   width: 50px;
   height: 50px;
@@ -49,15 +63,28 @@
     padding: 30px;
     height: 50%; }
 
-.project-item {
-  background-color: pink;
-  height: 10vh; }
-
 .project-item-container {
   background-color: grey;
   width: 100%;
   display: flex;
   flex-flow: column; }
+  .project-item-container .project-item {
+    background-color: pink;
+    height: 15vh; }
+    .project-item-container .project-item li {
+      height: 100%; }
+      .project-item-container .project-item li .projectLink {
+        position: relative;
+        top: 25%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      .project-item-container .project-item li .right-arrow {
+        text-align: center;
+        padding-bottom: 5%; }
+      .project-item-container .project-item li .project-title {
+        text-align: center; }
 
 .left-side-bar {
   background-color: gold;
