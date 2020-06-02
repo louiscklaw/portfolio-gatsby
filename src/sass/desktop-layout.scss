@@ -41,9 +41,13 @@
 
 
 .project-item {
-  background-color: pink;
   width: 25%;
   height: 25%;
+
+  &:hover .projectLink{
+    background-color: green;
+    display: block;
+  }
 }
 
 .project-item-container {
@@ -59,18 +63,23 @@
   li {
     height: 100%;
 
-    .projectLink {
+    .project-link {
+      display: none;
+
       position: relative;
       top: 25%;
       height: 50%;
+    }
 
+
+    &:hover .project-link{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
     }
 
     .right-arrow {
+
       text-align: center;
       padding-bottom: 5%;
     }
