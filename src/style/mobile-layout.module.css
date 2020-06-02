@@ -12,9 +12,10 @@
   justify-content: center;
   order: 1; }
   .bottom-nav .connection-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
+    width: 100%; }
+    .bottom-nav .connection-list ul {
+      display: flex;
+      justify-content: space-around; }
   .bottom-nav .last-build {
     display: none; }
   .bottom-nav .simple-credit {

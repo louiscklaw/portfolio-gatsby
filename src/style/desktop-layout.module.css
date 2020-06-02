@@ -16,22 +16,44 @@
   flex-flow: row;
   justify-content: center; }
 
-.connection-list a {
-  color: white;
-  padding-left: 2px;
-  padding-right: 2px; }
-
-.connection-list {
-  display: inline-flex;
-  list-style: outside none none; }
-
 .bottom-nav {
-  text-align: center;
   height: 33%; }
+  .bottom-nav .connection-list {
+    height: 25%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
+    .bottom-nav .connection-list ul {
+      display: inline-flex;
+      list-style: outside none none;
+      margin: auto; }
+      .bottom-nav .connection-list ul li {
+        padding: 5px; }
+  .bottom-nav .build-info {
+    height: 10%;
+    text-align: center; }
+  .bottom-nav .source-link {
+    height: 10%;
+    text-align: center; }
+  .bottom-nav .simple-credit {
+    text-align: center; }
+  .bottom-nav .last-build {
+    height: 10%;
+    text-align: center; }
 
 .middle-nav {
+  color: white;
+  font-weight: bold;
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   height: 34%; }
+  .middle-nav ul {
+    list-style: outside none none; }
+    .middle-nav ul li {
+      padding: 5px 0px; }
 
 .top-nav {
   background-color: red;

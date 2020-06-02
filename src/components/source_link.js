@@ -7,7 +7,7 @@ function SourceLink(){
 
   return(
     <div className={target_layout.sourceLink}>
-      <a href="https://github.com/louiscklaw/portfolio-preact">
+      <a href="https://github.com/louiscklaw/portfolio-gatsby">
         souce code
       </a>
     </div>

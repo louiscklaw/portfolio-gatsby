@@ -19,24 +19,69 @@
   justify-content: center;
 }
 
-.connection-list a {
-  color: white;
-  padding-left: 2px;
-  padding-right: 2px;
-}
+// .connection-list a {
+//   color: white;
+//   padding-left: 2px;
+//   padding-right: 2px;
+// }
 
-.connection-list {
-  display: inline-flex;
-  list-style: outside none none;
-}
 
 .bottom-nav {
-  text-align: center;
   height: 33%;
+
+  .connection-list {
+    height: 25%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    ul {
+      display: inline-flex;
+      list-style: outside none none;
+      margin:auto;
+
+      li {
+        padding: 5px;
+      }
+    }
+  }
+
+  .build-info {
+    height: 10%;
+    text-align: center;
+  }
+
+  .source-link {
+    height: 10%;
+    text-align: center;
+  }
+
+  .simple-credit {
+    text-align: center;
+  }
+
+  .last-build {
+    height: 10%;
+    text-align: center;
+  }
 }
 
 .middle-nav {
+  ul {
+    list-style: outside none none;
+    li {
+      padding: 5px 0px;
+    }
+  }
+
+  color: white;
+  font-weight: bold;
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+
   height: 34%;
 }
 
