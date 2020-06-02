@@ -21,9 +21,18 @@
   padding-top: 3em; }
 
 .project-item {
-  background-color: pink;
   width: 25%;
   height: 25%; }
+  .project-item:hover .projectLink {
+    background-color: green;
+    display: block; }
+  .project-item li {
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */ }
 
 .project-item-container {
   background-color: grey;
@@ -34,28 +43,36 @@
   flex-flow: row wrap; }
   .project-item-container li {
     height: 100%; }
-    .project-item-container li .projectLink {
+    .project-item-container li:hover .project-link {
+      display: block; }
+    .project-item-container li .project-link {
+      display: none;
       position: relative;
-      top: 25%;
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-    .project-item-container li .right-arrow {
-      text-align: center;
-      padding-bottom: 5%; }
-    .project-item-container li .project-title {
-      text-align: center; }
+      height: 100%; }
+      .project-item-container li .project-link .background-dimmer {
+        background-color: rgba(32, 32, 32, 0.5);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        .project-item-container li .project-link .background-dimmer .right-arrow {
+          height: 20%; }
+        .project-item-container li .project-link .background-dimmer .project-title {
+          height: 20%; }
 
 .left-side-bar {
-  background-color: gold;
+  background-color: #2c3e50;
   height: 100%;
   width: 20vw;
   display: flex;
   flex-flow: column;
   position: fixed; }
   .left-side-bar .bottom-nav {
-    height: 33%; }
+    height: 33%;
+    color: #ecf0f1; }
+    .left-side-bar .bottom-nav a {
+      text-decoration: underline; }
     .left-side-bar .bottom-nav .connection-list {
       height: 25%;
       display: flex;
@@ -74,7 +91,9 @@
       height: 10%;
       text-align: center; }
     .left-side-bar .bottom-nav .simple-credit {
-      text-align: center; }
+      color: #ecf0f1;
+      text-align: center;
+      margin: 5% 0px; }
     .left-side-bar .bottom-nav .last-build {
       height: 10%;
       text-align: center; }
@@ -92,7 +111,7 @@
       .left-side-bar .middle-nav ul li {
         padding: 5px 0px; }
   .left-side-bar .top-nav {
-    background-color: red;
+    background-color: #2c3e50;
     height: 33%; }
   .left-side-bar .avatar-img {
     width: 115px;

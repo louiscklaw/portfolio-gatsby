@@ -5,6 +5,8 @@
 
 // Set your brand colors
 $purple: #8A4D76;
+$link-color: #ecf0f1;
+
 $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
@@ -15,7 +17,7 @@ $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
+$link: $link-color;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -24,6 +26,10 @@ $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+$link-hover: #ecf0f1;
+$portfolio-accent-color: #2c3e50;
+$portfolio-text-color: #ecf0f1;
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";

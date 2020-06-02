@@ -8,7 +8,8 @@ function SimpleCredit(){
 
   return(
     <div className={target_layout.simpleCredit}>
-      ❤️ coded by louiscklaw. Built on the solder of
+      ❤️ coded by louiscklaw. <br/>
+      Built on the solder of <br/>
       <Link to="/credits/">
         <a>
           THESE GIANTS

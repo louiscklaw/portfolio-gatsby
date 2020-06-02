@@ -1,3 +1,7 @@
+$portfolio-accent-color: #2c3e50;
+$portfolio-text-color: #ecf0f1;
+
+
 .project-detail-container {
   background-color: yellowgreen;
   padding-left: 20vw;
@@ -12,7 +16,6 @@
       width: 100%;
       flex-flow: row;
       justify-content: space-between;
-
 
       padding-bottom: 50px;
     }
@@ -48,6 +51,12 @@
     background-color: green;
     display: block;
   }
+
+  li {
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
 }
 
 .project-item-container {
@@ -63,36 +72,45 @@
   li {
     height: 100%;
 
+    &:hover .project-link{
+      display: block;
+    }
+
     .project-link {
       display: none;
-
       position: relative;
-      top: 25%;
-      height: 50%;
+      // top: 25%;
+      // height: 50%;
+      height: 100%;
+
+      .background-dimmer{
+        background-color: rgba(32,32,32,0.5);
+        height: 100%;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        // background-color: red;
+        // width: 250px;
+        // height: 250px;
+
+        .right-arrow{
+          height: 20%;
+        }
+        .project-title{
+          height: 20%;
+        }
+      }
     }
 
-
-    &:hover .project-link{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .right-arrow {
-
-      text-align: center;
-      padding-bottom: 5%;
-    }
-
-    .project-title {
-      text-align: center;
-    }
   }
 
 }
 
 .left-side-bar {
-  background-color: gold;
+  background-color: $portfolio-accent-color;
   height: 100%;
   width: 20vw;
 
@@ -103,6 +121,11 @@
 
   .bottom-nav {
     height: 33%;
+    color: $portfolio-text-color;
+
+    a {
+      text-decoration: underline;
+    }
 
     .connection-list {
       height: 25%;
@@ -132,7 +155,10 @@
     }
 
     .simple-credit {
+      color: $portfolio-text-color;
       text-align: center;
+
+      margin: 5% 0px;
     }
 
     .last-build {
@@ -164,7 +190,7 @@
   }
 
   .top-nav {
-    background-color: red;
+    background-color: $portfolio-accent-color;
     height: 33%;
   }
 
