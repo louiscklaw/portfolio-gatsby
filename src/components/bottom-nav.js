@@ -3,7 +3,7 @@ import React from 'react'
 import StyleContext from '../contexts/StyleContext'
 
 import ConnectionList from './connection_list'
-import BuildInfo from './build_info'
+import TravisBuildInfo from './travis_build_info'
 import SourceLink from './source_link'
 import SimpleCredit from './simple_credit'
 import LastBuild from './last_build'
@@ -15,7 +15,7 @@ function BottomNav(){
   return(
     <div className={target_layout.bottomNav}>
       <ConnectionList />
-      <BuildInfo />
+      <TravisBuildInfo />
       <SourceLink />
       <SimpleCredit />
       <LastBuild />

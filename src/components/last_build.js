@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {last_build_stamp} from '../last_build_stamp'
+import {BUILD_DATE} from '../build_info'
 
 import StyleContext from '../contexts/StyleContext'
 
@@ -9,7 +9,7 @@ function LastBuild(){
 
   return(
     <div className={target_layout.lastBuild}>
-      {last_build_stamp}
+      {BUILD_DATE}
     </div>
   )
 }
