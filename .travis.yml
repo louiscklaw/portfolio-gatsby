@@ -22,7 +22,7 @@ jobs:
     - stage: Deploy
       script:
         - npm install -g firebase-tools firebase-functions firebase-admin
-        # - node ./scripts/update_build_info.js
+        - node scripts/update_build_info.js
         - scripts/build.sh
 
       deploy:
@@ -50,3 +50,4 @@ stages:
 
 import:
   - credentials.yml
+  - firebase_credentials.yml
