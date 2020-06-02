@@ -14,7 +14,16 @@ function ProjectListContent() {
     <>
       <ul className={target_layout.projectItemContainer}>
         <Link to="/trading-view-dashboard/" className={target_layout.projectItem}>
-          <li >trading view dashboard</li>
+          <li style={{backgroundImage:'url(/trading-view-screenshot_thumbnail.png)'}}>
+            <div className={target_layout.projectLink}>
+              <div className={target_layout.rightArrow}>
+                <i className="fas fa-arrow-circle-right fa-2x"></i>
+              </div>
+              <div className={target_layout.projectTitle}>
+                trading view dashboard
+              </div>
+            </div>
+          </li>
         </Link>
         <Link to="/project1/" className={target_layout.projectItem}>
           <li >project 1</li>
