@@ -15,7 +15,9 @@ for i in $SRC_PATH/*.scss; do
   echo INPUT_PATH:$INPUT_PATH
   echo OUTPUT_PATH:$OUTPUT_PATH
 
-  yarn run _css-build $INPUT_PATH $OUTPUT_PATH
+  yarn run _css-build $INPUT_PATH $OUTPUT_PATH &
 done
+
+wait
 
 mv src/style/layout.module.css src/style/layout.css

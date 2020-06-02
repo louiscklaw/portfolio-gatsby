@@ -154,7 +154,6 @@
     justify-content: center; }
 
 .main-container {
-  background-color: cyan;
   height: 100vh;
   display: flex;
   flex-flow: row; }
