@@ -6,9 +6,8 @@ import StyleContext from "../contexts/StyleContext"
 
 function Avatar() {
   const {target_layout} = React.useContext(StyleContext)
-  console.log(target_layout)
 
-  const data = useStaticQuery(graphql`
+const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "avatar.jpeg" }) {
         childImageSharp {

@@ -53,7 +53,6 @@
   width: 25%;
   height: 25%; }
   .project-item:hover .projectLink {
-    background-color: green;
     display: block; }
   .project-item li {
     background-position: center;
@@ -64,7 +63,7 @@
     /* Resize the background image to cover the entire container */ }
 
 .project-item-container {
-  background-color: grey;
+  background-color: #ecf0f1;
   height: 100%;
   width: 100%;
   padding-left: 20vw;
@@ -127,7 +126,7 @@
       height: 10%;
       text-align: center; }
   .left-side-bar .middle-nav {
-    color: white;
+    color: #ecf0f1;
     font-weight: bold;
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
@@ -154,7 +153,6 @@
     justify-content: center; }
 
 .main-container {
-  background-color: cyan;
   height: 100vh;
   display: flex;
   flex-flow: row; }

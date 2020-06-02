@@ -34,13 +34,13 @@ $project-detail-link-color: #2c3e50;
     text-transform: uppercase;
   }
 
-  a{
+  a {
     color: $project-detail-link-color;
     text-decoration: underline;
     font-weight: bold;
   }
 
-  a:hover{
+  a:hover {
     color: $project-detail-link-color;
   }
 
@@ -56,12 +56,12 @@ $project-detail-link-color: #2c3e50;
 
       padding-bottom: 10%;
 
-      .project-detail-date{
+      .project-detail-date {
         font-size: 0.8em;
       }
     }
 
-    .project-detail-body{
+    .project-detail-body {
       a:after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
@@ -100,21 +100,22 @@ $project-detail-link-color: #2c3e50;
   width: 25%;
   height: 25%;
 
-  &:hover .projectLink{
-    background-color: green;
+  &:hover .projectLink {
     display: block;
   }
 
   li {
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
   }
 }
 
 .project-item-container {
-  background-color: grey;
-
+  background-color: $project-detail-background-color;
   height: 100%;
   width: 100%;
   padding-left: 20vw;
@@ -125,7 +126,7 @@ $project-detail-link-color: #2c3e50;
   li {
     height: 100%;
 
-    &:hover .project-link{
+    &:hover .project-link {
       display: block;
     }
 
@@ -136,11 +137,11 @@ $project-detail-link-color: #2c3e50;
       // height: 50%;
       height: 100%;
 
-      .background-dimmer{
-        background-color: rgba(32,32,32,0.5);
+      .background-dimmer {
+        background-color: rgba(32, 32, 32, 0.5);
         height: 100%;
 
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -149,10 +150,11 @@ $project-detail-link-color: #2c3e50;
         // width: 250px;
         // height: 250px;
 
-        .right-arrow{
+        .right-arrow {
           height: 20%;
         }
-        .project-title{
+
+        .project-title {
           height: 20%;
         }
       }
@@ -229,7 +231,7 @@ $project-detail-link-color: #2c3e50;
       }
     }
 
-    color: white;
+    color: $portfolio-text-color;
     font-weight: bold;
     font-family: Montserrat,
     sans-serif;
@@ -266,7 +268,6 @@ $project-detail-link-color: #2c3e50;
 }
 
 .main-container {
-  background-color: cyan;
   height: 100vh;
 
   display: flex;
