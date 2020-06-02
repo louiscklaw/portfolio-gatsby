@@ -1,0 +1,51 @@
+---
+slug: "/rthk31-rthk32-linux-viewer/"
+date: "2019-05-04"
+title: "rthk31 rthk32 linux viewer"
+---
+import YoutubeIframe from "../../components/youtube-iframe"
+
+import MdxProjectDetailTemplate from "../../templates/mdx-project-detail-template"
+export default MdxProjectDetailTemplate
+
+![](/rthk31rthk32linuxviewer_thumbnail.png)
+
+### Purpose:
+To connect to the world while you’re working in linux environment at home…… inspired by
+Linux桌面環境下收看ViuTV
+
+### Requirement:
+- linux, gnome
+- python3, curl, gnome-mpv
+
+### How to install:
+`open ~/.bashrc or ~/.zshrc and paste the following source into itlogout linux -> logindone`
+
+### Source:
+
+
+### updated 2019-07-28
+
+#### to watch twitch under linux
+to install
+`pip3 install streamlink`
+
+to use
+`streamlink --player mpv https://www.twitch.tv/shinjishinji1 720p`
+
+#### to watch youtube under linux
+to install
+`pip3 install install youtube-dl mps-youtube==0.2.7`
+
+to use
+`mpsyt playurl https://www.youtube.com/watch?v=wcnBl6gNIhQ`
+
+#### to watch ViuTV under linux
+to install
+```
+mpv http://viutv99-i.akamaihd.net/hls/live/265284/live1/stream4/streamPlaylist.m3u8
+mpv http://viutv99-i.akamaihd.net/hls/live/265284/live1/master.m3u8
+```
+
+to watch CableTV under linux
+`mpv http://media.fantv.hk/m3u8/archive/channel2.m3u8`
