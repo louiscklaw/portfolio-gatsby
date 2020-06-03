@@ -6553,3 +6553,9 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
+pre {
+  border-radius: 3px;
+  padding: unset;
+  margin: 0.3rem;
+  filter: drop-shadow(0 0 0.3rem grey); }

@@ -1,4 +1,5 @@
 import React from "react"
+import { findDOMNode } from 'react-dom'
 
 import BackToCatalogue from '../components/back_to_catalogue'
 import ProjectDetailEnd from '../components/project-detail-end'
@@ -7,8 +8,17 @@ import Layout from '../components/layout'
 
 import StyleContext from '../contexts/StyleContext'
 
+import highlight from 'highlight.js'
+
 function MdxProjectDetailTemplate(props) {
   const {target_layout} = React.useContext(StyleContext)
+
+  React.useEffect(()=>{
+    // enable highlight using highlightjs
+    document.querySelectorAll('code').forEach(ele => {
+      highlight.highlightBlock(ele);
+    })
+  })
 
   return(
     <Layout>
