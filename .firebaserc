@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "portfolio-gatsby-f56ce"
+  },
+  "targets": {
+    "portfolio-gatsby-f56ce": {
+      "hosting": {
+        "staging": [
+          "staging-portfolio-5c1c2"
+        ],
+        "production": [
+          "portfolio-gatsby-f56ce"
+        ]
+      }
+    }
   }
 }
