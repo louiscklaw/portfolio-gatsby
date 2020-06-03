@@ -44,7 +44,7 @@ class GlobalContextProvider extends React.Component {
   }
 
   checkStagingSite = () => {
-    return window.location.href.search(/\/localhost/) > -1
+    return window.location.href.search(/\/staging/) > -1
   }
 
   componentDidMount = () => {
