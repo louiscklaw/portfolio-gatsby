@@ -1,5 +1,6 @@
 # Logs
 *cache
+src/build_info.js
 
 logs
 *.log
