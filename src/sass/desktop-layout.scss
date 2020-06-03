@@ -224,6 +224,10 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
       }
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     color: $portfolio-text-color;
     font-weight: bold;
     font-family: Montserrat,
