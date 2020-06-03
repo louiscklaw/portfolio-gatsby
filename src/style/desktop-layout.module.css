@@ -25,6 +25,9 @@
     color: #7392b2; }
   .project-detail-container .project-detail {
     padding: 8%; }
+    .project-detail-container .project-detail img {
+      border-radius: 0.3rem;
+      filter: drop-shadow(0 0 0.5rem grey); }
     .project-detail-container .project-detail .project-detail-head {
       display: inline-flex;
       width: 100%;
