@@ -17,6 +17,8 @@ export default function HTML(props) {
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.0/styles/monokai.min.css" integrity="sha256-/d3ZZC6Gr1V8JDi9Os6A2CjemarhIv16pw1Q6snL+lM=" crossOrigin="anonymous" />
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

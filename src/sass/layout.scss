@@ -36,3 +36,15 @@ $project-detail-text-color: #2c3e50;
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";
+
+.github-link-badge {
+  margin-left: 0.3rem;
+}
+
+pre {
+  border-radius: 3px;
+  padding: unset;
+  margin: 0.3rem;
+
+  filter: drop-shadow(0 0 0.3rem grey);
+}
