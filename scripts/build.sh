@@ -9,4 +9,4 @@ scripts/build_scss.sh
 
 yarn build
 
-#done
+# build done

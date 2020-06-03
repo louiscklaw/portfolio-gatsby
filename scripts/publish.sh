@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-yarn
+set -ex
 
-yarn clean
+if [[ -z "$DEPLOY_TARGET" ]]; then
+  echo "DEPLOY_TARGET is empty"
+  exit 99
+fi
 
-# build bulma css
-scripts/build_scss.sh
+# build gatsby and css
+scripts/build.sh
 
-yarn build
+firebase deploy --only hosting:$DEPLOY_TARGET --token $FIREBASE_TOKEN --non-interactive
