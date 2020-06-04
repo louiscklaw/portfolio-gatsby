@@ -7,7 +7,8 @@ const defaultState = {
   windowInnerWidth:0,
   windowInnerHeight:0,
   helloworldFunc: () => {},
-  isMobile:()=>{}
+  isMobile:()=>{},
+  checkStagingSite: () => { return false}
 }
 
 const GlobalContext = React.createContext(defaultState)
