@@ -18,6 +18,7 @@ jobs:
     - stage: Build
       script:
         - scripts/build.sh
+        - scripts/all_deploy.sh
 
     # - stage: Deploy
     #   if: branch = master
