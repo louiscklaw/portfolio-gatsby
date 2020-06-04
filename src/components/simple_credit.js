@@ -10,11 +10,7 @@ function SimpleCredit(){
     <div className={target_layout.simpleCredit}>
       ❤️ coded by louiscklaw. <br/>
       Built on the solder of <br/>
-      <Link to="/credits/">
-        <a>
-          THESE GIANTS
-        </a>
-      </Link>
+      <Link to="/credits/">THESE GIANTS</Link>
     </div>
   )
 }

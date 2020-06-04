@@ -43,6 +43,10 @@ class GlobalContextProvider extends React.Component {
     return window.innerWidth < 501
   }
 
+  checkStagingSite = () => {
+    return window.location.href.search(/\/staging/) > -1
+  }
+
   componentDidMount = () => {
     this.setState({
       ...this.state,
@@ -62,7 +66,6 @@ class GlobalContextProvider extends React.Component {
 
     // this.updateWidthAndHeight();
   }
-
   render() {
     const { children } = this.props
     return (
@@ -70,7 +73,8 @@ class GlobalContextProvider extends React.Component {
         value={{
           ...this.state,
           helloworldFunc: this.helloworldFunc,
-          isMobile: this.isMobile
+          isMobile: this.isMobile,
+          checkStagingSite: this.checkStagingSite
         }}
       >
         {children}

@@ -8,11 +8,9 @@ import GlobalContext from '../contexts/GlobalContext'
 import SEO from "../components/seo"
 
 function IndexPage() {
-  const test=React.useContext(GlobalContext)
-
   return(
     <Layout>
-      <SEO title="Home" />
+      <SEO title="my project list" />
       <ProjectListContent />
     </Layout>
   )

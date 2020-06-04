@@ -2,6 +2,6 @@
 
 set -ex
 
-export TARGET=staging
+export DEPLOY_TARGET="staging"
 
-scripts/deploy.sh
+scripts/publish.sh

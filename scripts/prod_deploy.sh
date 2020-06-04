@@ -2,6 +2,6 @@
 
 set -ex
 
-export TARGET=production
+export DEPLOY_TARGET="production"
 
-scripts/deploy.sh
+scripts/publish.sh
