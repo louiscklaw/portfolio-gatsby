@@ -5,7 +5,7 @@ date: 2019-01-01
 author: me
 ---
 
-import {GithubLink, NewWindowLink} from '../components/'
+import {GithubLink, NewWindowLink, ImageLightBox} from '../components/'
 
 import {MdxProjectDetailTemplate} from "../templates"
 export default MdxProjectDetailTemplate
@@ -16,11 +16,19 @@ export default MdxProjectDetailTemplate
 #### H4
 ##### H5
 
+### lightbox test
+
+#### basic image
+![](//placekitten.com/100/100)
+#### image with image light box
+<ImageLightBox src="http://placekitten.com/1500/500" style={{width: '50%',height: '50%'}} />
+
+### link test
 [go to example.com](https://www.example.com)
 <GithubLink repo_fullname="louiscklaw/travis-playlist"/>
-
 <NewWindowLink href="//www.example.com" text="go to www.example.com"/>
 
+### list test
 - This
 - Is
 - A
