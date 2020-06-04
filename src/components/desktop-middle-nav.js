@@ -50,9 +50,9 @@ function DesktopMiddleNav(){
           </Link>
         </li>
         <li>
-          <Link to="/about/" className="is-text">
+          <a href="https://hackmd.io/sXN16yjWQVqMh0hyy9yB1A" className="is-text">
             hackmd todo
-          </Link>
+          </a>
         </li>
       </ul>
     </>
