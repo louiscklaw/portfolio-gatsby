@@ -35,17 +35,17 @@ function DesktopMiddleNav(){
           </Link>
         </li>
         <li>
-          <Link to="https://louiscklaw.github.io/travis-playlist/" className="is-text">
+          <a to="https://louiscklaw.github.io/travis-playlist/" className="is-text">
             travis build dashboard
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/about/" className="is-text">
+          <a to="https://console.firebase.google.com/u/1/project/portfolio-gatsby-f56ce/overview" className="is-text">
             firebase console
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/about/" className="is-text">
+          <Link to="/favourite_link/" className="is-text">
             favourite link
           </Link>
         </li>
