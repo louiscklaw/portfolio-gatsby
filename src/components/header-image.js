@@ -1,10 +1,10 @@
 import React from 'react'
 import ImageLightBox from './image-lightbox'
 
-function HeaderImage(){
+function HeaderImage({src}){
   return(
     <div style={{textAlign: 'center'}}>
-      <ImageLightBox src="/hk-data-search.png" style={{width: '50%',height: '50%'}} />
+      <ImageLightBox src={src} style={{width: '50%',height: '50%'}} />
     </div>
   )
 }

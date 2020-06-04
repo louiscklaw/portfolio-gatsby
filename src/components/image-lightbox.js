@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
-
-// import StyleContext from '../contexts/StyleContext'
-
+import 'react-image-lightbox/style.css';
 
 const defaultState = {isOpen: false}
-const TestContext = React.createContext(defaultState)
 
 function ImageLightBox(props) {
   // Declare a new state variable, which we'll call "count"
-  const [is_open, updateIsOpen] = React.useState(0);
+  const [is_open, updateIsOpen] = React.useState();
   return (
     <div>
 
       <img
         src={props.src}
-        onClick={(e)=>{ updateIsOpen(true) }}
+        onClick={( )=>{ updateIsOpen(true) }}
         style={{cursor: "pointer",...props.style}}
       />
 
