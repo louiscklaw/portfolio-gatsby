@@ -37,7 +37,11 @@ function DesktopMiddleNav(){
             travis build dashboard
           </a>
         </li>
-
+        <li>
+          <a href="/find-me/" className="is-text chinese-text" target="_blank" >
+            有野搵我？
+          </a>
+        </li>
         <DebugMenu />
 
       </ul>

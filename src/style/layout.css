@@ -6562,3 +6562,6 @@ pre {
   padding: unset;
   margin: 0.3rem;
   filter: drop-shadow(0 0 0.3rem grey); }
+
+.chinese-text {
+  font-weight: lighter; }
