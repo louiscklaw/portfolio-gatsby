@@ -9,7 +9,7 @@ function LastBuild(){
 
   return(
     <div className={target_layout.lastBuild}>
-      {BUILD_DATE}
+      last build: {BUILD_DATE}
     </div>
   )
 }
