@@ -1,0 +1,46 @@
+---
+slug: "/trading-view-dashboard"
+date: "2019-05-04"
+title: "Allwinner v3s tryout"
+---
+
+import {MdxProjectDetailTemplate} from "../../templates"
+export default MdxProjectDetailTemplate
+
+![](/ccbdbbdd9eb76be469a343462f7729be.jpg)
+
+### Purpose:
+This is a tryout of homemake embedded linux project using allwinner v3s chips inspired by
+https://www.reddit.com/r/electronics/comments/83141t/i_made_an_allwinner_v3s_evaluation_board_based/
+
+
+### progress:
+Currently in progress with the second try:
+
+### The first try:
+https://github.com/louiscklaw/allwinner-v3s-tryout/tree/20181118-print-1
+
+### The second try CHANGE LOG:
+- fix SVREF wire
+- 4k7 on SDIO CLK wire
+- fix power facilities
+- add GL827L sdcard reading facilities
+- add ATMega328p for power and reset control
+- add USB to serial
+
+### Buildroot:
+to setup ubuntu/docker for buildroot(tested under 18.04)
+
+```bash
+sudo apt-get install iputils-ping \
+vim git wget xz-utils bzip2 \
+gcc device-tree-compiler \
+python python-dev time make pkg-config
+```
+
+### References / Repositories:
+- https://github.com/louiscklaw/allwinner-v3s-tryout
+- https://www.reddit.com/r/electronics/comments/83141t/i_made_an_allwinner_v3s_evaluation_board_based/
+
+### BOM/Part list:
+To be updated

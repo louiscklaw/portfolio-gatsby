@@ -1,0 +1,67 @@
+---
+slug: "/appium-behave-notes"
+date: "2019-05-04"
+title: "appium behave notes"
+---
+
+import YoutubeIframe from "../../components/youtube-iframe"
+import MdxProjectDetailTemplate from "../../templates/mdx-project-detail-template"
+export default MdxProjectDetailTemplate
+
+### Purpose:
+
+to test mobile apps of hk observatory
+environment:
+
+- linux
+- appium
+- python 3.6.1, behave, python-appium-client
+
+### to setup:
+`$ pip install -r requirements.txt`
+
+### to execute:
+```
+$ virtualenv venv
+$ source venv/bin/activate
+```
+
+### install python libraries:
+`$ pip install -r requirements.txt`
+
+start appium -> connect to android / genymotion appium:
+
+```
+$ python behave
+$ behave ./features/HKOApp_9DayForecast.feature
+```
+
+### stack on MAC machine:
+```
+brew cask install visual-studio-code
+brew install zsh-history-substring-search
+brew install zsh
+brew install zsh-lovers
+brew install zsh-autosuggestions
+brew install zsh-navigation-tools
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+brew install zsh-git-prompt
+brew install zshdb
+brew install git-flow
+```
+
+### demo:
+passing example
+<YoutubeIframe videoSrcURL="https://www.youtube.com/embed/Ce-v1zTHhwU" videoTitle="passing example"/>
+
+failing example
+<YoutubeIframe videoSrcURL="https://www.youtube.com/embed/uR8VLSwvf9Q" videoTitle="failing example"/>
+
+### system structure:
+
+system structure:
+<img src="/2741817b20175a8af3740d2c44c4f490.svg" />
+
+Behave grammer:
+<img src="/448906d741ef72dfa303db44fce94059.svg" />

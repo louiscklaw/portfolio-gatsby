@@ -1,0 +1,83 @@
+---
+path: /test
+title: Style guide
+date: 2019-01-01
+author: me
+---
+
+import {GithubLink, NewWindowLink, ImageLightBox} from '../components/'
+import AnchorLink from '../components/anchor_link.js'
+
+import {MdxProjectDetailTemplate} from "../templates"
+export default MdxProjectDetailTemplate
+
+# H1
+## H2
+### H3
+#### H4
+##### H5
+
+### lightbox test
+
+#### basic image
+![](//placekitten.com/100/100)
+#### image with image light box
+<ImageLightBox src="http://placekitten.com/1500/500" style={{width: '50%',height: '50%'}} />
+
+### link test
+[go to example.com](https://www.example.com)
+<GithubLink repo_fullname="louiscklaw/travis-playlist"/>
+<NewWindowLink href="//www.example.com" text="go to www.example.com"/>
+
+### list test
+- This
+- Is
+- A
+- List
+
+This is a normal paragraph
+
+Here is another paragraph
+
+```js
+
+console.log("helloworld")
+console.log("helloworld")
+
+console.log("helloworld")
+
+console.log("helloworld")
+
+function Helloworld(){
+  console.log("1233211234567")
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+
+```
+
+```bash
+MkCd () {
+  echo "helloworld"
+}
+```
+
+```bash
+sudo apt-get install iputils-ping \
+vim git wget xz-utils bzip2 \
+gcc device-tree-compiler \
+python python-dev time make pkg-config
+```
+
+| This long header for a column |  Is   |    A    | Table |
+| :---------------------------- | :---: | :-----: | ----: |
+| With                          | Four  | Columns |       |
+| tick                          |  tak  |   toe   |  test |
+
+### anchor test
+<AnchorLink {...props} ><h3>apple</h3></AnchorLink>
+<AnchorLink {...props} ><h3>References / Repositories:</h3></AnchorLink>

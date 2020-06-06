@@ -1,0 +1,6 @@
+// isMobile ?
+let MAX_MOBILE_SCREEN_WIDTH=500
+
+export {
+  MAX_MOBILE_SCREEN_WIDTH
+}

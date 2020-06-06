@@ -1,0 +1,281 @@
+$portfolio-accent-color: #2c3e50;
+$portfolio-text-color: #ecf0f1;
+
+$project-detail-background-color: #ecf0f1;
+$project-detail-text-color: #2c3e50;
+$project-detail-link-color: #2c3e50;
+$project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
+
+.project-detail-container {
+  background-color: $project-detail-background-color;
+  color: $project-detail-text-color;
+
+  width: 100%;
+  padding-left: 20vw;
+
+  ul {
+    list-style: disc;
+    padding-left: 5%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $project-detail-link-color;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $project-detail-link-hover-color;
+  }
+
+  .project-detail {
+    padding: 8%;
+
+    img {
+      border-radius: 0.3rem;
+      filter: drop-shadow(0 0 0.5rem grey);
+    }
+
+    .project-detail-head {
+      display: inline-flex;
+      width: 100%;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-bottom: 10%;
+
+      .project-detail-date {
+        font-size: 0.8em;
+      }
+    }
+
+    .project-detail-footer {
+      font-size: 1.5em;
+      padding-top: 5%;
+    }
+
+  }
+}
+
+
+.greetings {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+// .connection-list a {
+//   color: white;
+//   padding-left: 2px;
+//   padding-right: 2px;
+// }
+
+
+.project-item {
+  width: 25%;
+  height: 25%;
+
+  &:hover .projectLink {
+    display: block;
+  }
+
+  li {
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+
+.project-item-container {
+  background-color: $project-detail-background-color;
+  height: 100%;
+  width: 100%;
+  padding-left: 20vw;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  li {
+    height: 100%;
+
+    &:hover .project-link {
+      display: block;
+    }
+
+    .project-link {
+      display: none;
+      position: relative;
+      // top: 25%;
+      // height: 50%;
+      height: 100%;
+
+      .background-dimmer {
+        background-color: rgba(32, 32, 32, 0.5);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        // background-color: red;
+        // width: 250px;
+        // height: 250px;
+
+        .right-arrow {
+          height: 20%;
+        }
+
+        .project-title {
+          height: 20%;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+  }
+
+}
+
+.left-side-bar {
+  background-color: $portfolio-accent-color;
+  height: 100%;
+  width: 20vw;
+
+  display: flex;
+  flex-flow: column;
+
+  position: fixed;
+
+  .bottom-nav {
+    height: 33%;
+    color: $portfolio-text-color;
+
+    a {
+      text-decoration: underline;
+    }
+
+    .connection-list {
+      height: 25%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      ul {
+        display: inline-flex;
+        list-style: outside none none;
+        margin: auto;
+
+        li {
+          padding: 5px;
+        }
+      }
+    }
+
+    .build-info {
+      height: 10%;
+      text-align: center;
+    }
+
+    .source-link {
+      height: 10%;
+      text-align: center;
+    }
+
+    .simple-credit {
+      color: $portfolio-text-color;
+      text-align: center;
+
+      margin: 5% 0px;
+    }
+
+    .last-build {
+      height: 10%;
+      text-align: center;
+    }
+  }
+
+  .middle-nav {
+    ul {
+      list-style: outside none none;
+
+      li {
+        padding: 5px 0px;
+      }
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    color: $portfolio-text-color;
+    font-weight: bold;
+    font-family: Montserrat,
+    sans-serif;
+    text-transform: uppercase;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    height: 34%;
+  }
+
+  .top-nav {
+    background-color: $portfolio-accent-color;
+    height: 33%;
+  }
+
+
+  .avatar-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+  }
+
+  .avatar-container {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+
+
+}
+
+.main-container {
+  height: 100vh;
+
+  display: flex;
+  flex-flow: row;
+}
+
+html {
+  overflow-y: unset;
+  overflow-x: unset;
+}

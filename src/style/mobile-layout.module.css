@@ -1,0 +1,119 @@
+.project-detail-container {
+  padding: 0px 5% 20% 5%;
+  background-color: #ecf0f1;
+  color: #2c3e50; }
+  .project-detail-container h1 {
+    font-size: 1.8em; }
+  .project-detail-container h2 {
+    font-size: 1.4em; }
+  .project-detail-container h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-top: 5%;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .project-detail-container a {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold; }
+  .project-detail-container .project-detail-head {
+    display: inline-flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 8% 0px;
+    text-align: center; }
+    .project-detail-container .project-detail-head .project-detail-date {
+      font-size: 0.8em; }
+
+.project-detail-end {
+  text-align: center;
+  padding-top: 10%; }
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px; }
+
+.bottom-nav {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  order: 1; }
+  .bottom-nav .connection-list ul {
+    display: flex;
+    justify-content: space-evenly; }
+  .bottom-nav .last-build {
+    display: none; }
+  .bottom-nav .simple-credit {
+    display: none; }
+  .bottom-nav .source-link {
+    display: none; }
+  .bottom-nav .build-info {
+    display: none; }
+
+.middle-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 25%;
+  order: 2; }
+  .middle-nav ul {
+    display: flex;
+    justify-content: space-around; }
+
+.top-nav {
+  background-color: #2c3e50;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  order: 0; }
+  .top-nav h1 {
+    order: 1;
+    padding-left: 3%;
+    height: 50%;
+    font-size: 2em;
+    color: #ecf0f1; }
+
+.project-item-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column; }
+  .project-item-container .project-item {
+    height: 15vh; }
+    .project-item-container .project-item li {
+      height: 100%; }
+      .project-item-container .project-item li .projectLink {
+        position: relative;
+        top: 25%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      .project-item-container .project-item li .right-arrow {
+        text-align: center;
+        padding-bottom: 5%; }
+      .project-item-container .project-item li .project-title {
+        text-align: center; }
+
+.left-side-bar {
+  background-color: #2c3e50;
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column; }
+
+.main-container {
+  width: 100vw;
+  display: flex;
+  flex-flow: column; }
+
+html {
+  overflow-y: unset;
+  overflow-x: unset; }
