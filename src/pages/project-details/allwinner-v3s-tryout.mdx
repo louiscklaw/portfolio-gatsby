@@ -1,5 +1,5 @@
 ---
-slug: "/trading-view-dashboard"
+slug: "/allwinner-v3s-tryout"
 date: "2019-05-04"
 title: "Allwinner v3s tryout"
 ---
@@ -7,20 +7,18 @@ title: "Allwinner v3s tryout"
 import {MdxProjectDetailTemplate} from "../../templates"
 export default MdxProjectDetailTemplate
 
-![](/ccbdbbdd9eb76be469a343462f7729be.jpg)
+<HeaderImage src="/ccbdbbdd9eb76be469a343462f7729be.jpg" caption="the working allwinner v3s board"/>
 
-### Purpose:
+<AnchorLink {...props}><h3>Purpose:</h3></AnchorLink>
 This is a tryout of homemake embedded linux project using allwinner v3s chips inspired by
-https://www.reddit.com/r/electronics/comments/83141t/i_made_an_allwinner_v3s_evaluation_board_based/
+<NewWindowLink href="https://www.reddit.com/r/electronics/comments/83141t/i_made_an_allwinner_v3s_evaluation_board_based/" />
 
 
-### progress:
-Currently in progress with the second try:
+<AnchorLink {...props}><h3>progress:</h3></AnchorLink>
+Currently in progress with the second try.
 
-### The first try:
-https://github.com/louiscklaw/allwinner-v3s-tryout/tree/20181118-print-1
+<AnchorLink {...props}><h3>The second try CHANGE LOG:</h3></AnchorLink>
 
-### The second try CHANGE LOG:
 - fix SVREF wire
 - 4k7 on SDIO CLK wire
 - fix power facilities
@@ -28,19 +26,21 @@ https://github.com/louiscklaw/allwinner-v3s-tryout/tree/20181118-print-1
 - add ATMega328p for power and reset control
 - add USB to serial
 
-### Buildroot:
+<AnchorLink {...props}><h3>Buildroot:</h3></AnchorLink>
 to setup ubuntu/docker for buildroot(tested under 18.04)
 
 ```bash
-sudo apt-get install iputils-ping \
+$ sudo apt-get install iputils-ping \
 vim git wget xz-utils bzip2 \
 gcc device-tree-compiler \
 python python-dev time make pkg-config
 ```
 
-### References / Repositories:
+<AnchorLink {...props}><h3>References / Repositories:</h3></AnchorLink>
+
 - https://github.com/louiscklaw/allwinner-v3s-tryout
 - https://www.reddit.com/r/electronics/comments/83141t/i_made_an_allwinner_v3s_evaluation_board_based/
 
-### BOM/Part list:
-To be updated
+<AnchorLink {...props}><h3>BOM/Part list:</h3></AnchorLink>
+
+- To be updated

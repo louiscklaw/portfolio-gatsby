@@ -11,6 +11,23 @@ import StyleContext from '../contexts/StyleContext'
 
 import mdx_shortcode from './mdx_shortcode'
 
+function DateLabel(props){
+  if (props._frontmatter.date){
+    return (
+      <>
+        <span className="fa-calendar-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </span>
+        {props._frontmatter.date}
+      </>
+    )
+  }else{
+    return(
+      <></>
+    )
+  }
+}
+
 function MdxProjectDetailTemplate(props) {
   const {target_layout} = React.useContext(StyleContext)
 
@@ -38,11 +55,8 @@ function MdxProjectDetailTemplate(props) {
                 <h1>{props._frontmatter.title}</h1>
               </AnchorLinkForProjectTitle>
 
-              <h2 className={target_layout.projectDetailDate}>
-                <span className="fa-calendar-icon">
-                  <i class="fas fa-calendar-alt"></i>
-                </span>
-                {props._frontmatter.date}
+              <h2 className={target_layout.projectDetailDate} style={{width: '10%'}}>
+                <DateLabel {...props} />
               </h2>
 
             </div>
