@@ -4,7 +4,7 @@ function GithubLink(props){
   return(
     <div>
       <a href={`//www.github.com/${props.repo_fullname}`}
-        target="_blank"
+        target="_blank" rel="noreferrer"
         >
         <span>{props.repo_fullname}</span>
         <i className="fab fa-github" style={{marginLeft: '0.2rem'}}></i>

@@ -1,8 +1,9 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
+import SEO from "../components/seo"
 
 import BackToCatalogue from '../components/back_to_catalogue'
-import ProjectDetailEnd from '../components/project-detail-end'
+// import ProjectDetailEnd from '../components/project-detail-end'
 
 import Layout from '../components/layout'
 
@@ -10,7 +11,7 @@ import StyleContext from '../contexts/StyleContext'
 
 import highlight from 'highlight.js'
 
-import mdx_config from './_mdx_provider_config'
+import mdx_shortcode from './mdx_shortcode'
 
 function MdxProjectDetailTemplate(props) {
   const {target_layout} = React.useContext(StyleContext)
@@ -24,7 +25,12 @@ function MdxProjectDetailTemplate(props) {
 
   return(
     <Layout>
-      <MDXProvider components={mdx_config}>
+      <SEO
+        title={props._frontmatter.title}
+        description={props._frontmatter.description}
+        keywords={props._frontmatter.keywords}
+      />
+      <MDXProvider components={mdx_shortcode}>
         <div className={target_layout.projectDetailContainer}>
           <div className={target_layout.projectDetail}>
 
@@ -35,6 +41,7 @@ function MdxProjectDetailTemplate(props) {
             </div>
 
             <div className={target_layout.projectDetailBody}>
+
               {props.children}
             </div>
 

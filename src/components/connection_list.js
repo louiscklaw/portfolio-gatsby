@@ -9,32 +9,32 @@ function ConnectionList() {
       <div className={target_layout.connectionList}>
         <ul >
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//www.facebook.com/louiscklaw" target="_blank" rel="noreferrer">
               <i className="fab fa-facebook fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//github.com/louiscklaw/" target="_blank" rel="noreferrer">
               <i className="fab fa-github fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//keybase.io/louiscklaw" target="_blank" rel="noreferrer">
               <i className="fab fa-keybase fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//hk.linkedin.com/in/louiscklaw" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin-in fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//louislabs.slack.com" target="_blank" rel="noreferrer">
               <i className="fab fa-slack fa-2x"></i>
             </a>
           </li>
           <li>
-            <a href="//www.facebook.com/louiscklaw" target="_blank">
+            <a href="//t.me/louislabs" target="_blank" rel="noreferrer">
               <i className="fab fa-telegram-plane fa-2x"></i>
             </a>
           </li>

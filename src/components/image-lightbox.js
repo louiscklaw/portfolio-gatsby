@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
@@ -14,9 +14,11 @@ function ImageLightBox(props) {
         src={props.src}
         onClick={( )=>{ updateIsOpen(true) }}
         style={{cursor: "pointer",...props.style}}
+        alt={props.alt}
       />
 
       { is_open && (
+
         <Lightbox
           mainSrc={props.src}
           // nextSrc={images[(photoIndex + 1) % images.length]}

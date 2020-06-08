@@ -9,12 +9,13 @@ function DebugMenu(){
 
   const debug_menu =<>
     <li>
-      <a href="https://console.firebase.google.com/u/1/project/portfolio-gatsby-f56ce/overview/" className="is-text" target="_blank">
+      <a href="https://console.firebase.google.com/u/1/project/portfolio-gatsby-f56ce/overview/"
+        className="is-text" target="_blank" rel="noreferrer">
         firebase console
       </a>
     </li>
     <li>
-      <a href="https://staging-portfolio-5c1c2.web.app/" className="is-text" target="_blank">
+      <a href="https://staging-portfolio-5c1c2.web.app/" className="is-text" target="_blank" rel="noreferrer">
         staging site
       </a>
     </li>
@@ -24,7 +25,7 @@ function DebugMenu(){
       </Link>
     </li>
     <li>
-      <a href="https://hackmd.io/sXN16yjWQVqMh0hyy9yB1A" className="is-text" target="_blank">
+      <a href="https://hackmd.io/sXN16yjWQVqMh0hyy9yB1A" className="is-text" target="_blank" rel="noreferrer">
         hackmd todo
       </a>
     </li>

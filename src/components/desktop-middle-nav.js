@@ -33,7 +33,7 @@ function DesktopMiddleNav(){
         </li>
 
         <li>
-          <a href="https://louiscklaw.github.io/travis-playlist/" className="is-text" target="_blank">
+          <a href="https://louiscklaw.github.io/travis-playlist/" className="is-text" target="_blank" rel="noreferrer">
             travis build dashboard
           </a>
         </li>
