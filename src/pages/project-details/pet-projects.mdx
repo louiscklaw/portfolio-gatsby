@@ -3,20 +3,12 @@ slug: "/pet-projects"
 date: "2019-05-04"
 title: "my pet project"
 ---
-import YoutubeIframe from "../../components/youtube-iframe"
-import {NewWindowLink, GithubLink, HeaderImage} from '../../components'
-
 import MdxProjectDetailTemplate from "../../templates/mdx-project-detail-template"
 export default MdxProjectDetailTemplate
 
 <HeaderImage src="/petpugproject_thumbnail.png" />
 
-### Linux toolbox:
-- ack
-- entr
-- inotify-tools
+<AnchorLink {...props} ><h3>References / Repositories:</h3></AnchorLink>
 
-### References / Repositories:
-
-- https://github.com/jenil/bulmaswatch
-- https://github.com/louiscklaw/travis-playlist
+- <GithubLink repo_fullname="jenil/bulmaswatch" />
+- <GithubLink repo_fullname="louiscklaw/travis-playlist" />
