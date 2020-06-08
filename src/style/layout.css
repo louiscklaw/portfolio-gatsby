@@ -7255,6 +7255,9 @@ span[data-tooltip] {
 .control span[data-tooltip] {
   border-bottom: none; }
 
+.fa-calendar-icon {
+  padding-right: 0.5rem; }
+
 .github-link-badge {
   margin-left: 0.3rem; }
 

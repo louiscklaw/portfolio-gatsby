@@ -37,7 +37,14 @@ function MdxProjectDetailTemplate(props) {
               <AnchorLinkForProjectTitle {...props}>
                 <h1>{props._frontmatter.title}</h1>
               </AnchorLinkForProjectTitle>
-              <h2 className={target_layout.projectDetailDate}>{props._frontmatter.date}</h2>
+
+              <h2 className={target_layout.projectDetailDate}>
+                <span className="fa-calendar-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                </span>
+                {props._frontmatter.date}
+              </h2>
+
             </div>
 
             <div className={target_layout.projectDetailBody}>
