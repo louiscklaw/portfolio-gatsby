@@ -4,7 +4,7 @@ import ClipboardJS from 'clipboard'
 
 import anchor_link_style from './anchor_link.module.scss'
 
-function AnchorLink(props){
+function AnchorLinkForProjectTitle(props){
   let html_shown = props.children
   let text_from_html_shown = html_shown.props.children
 
@@ -32,7 +32,7 @@ function AnchorLink(props){
       <div className={anchor_link_style.test}>
         <Link
           className={anchor_link_style.anchorLink}
-          to={props.path+'#'+diluted_text}
+          to={props.path+'#'}
           id={diluted_text}
         >
           {html_shown}
@@ -45,4 +45,4 @@ function AnchorLink(props){
   )
 }
 
-export default AnchorLink
+export default AnchorLinkForProjectTitle

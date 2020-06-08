@@ -1,15 +1,13 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
+import highlight from 'highlight.js'
+
+import AnchorLinkForProjectTitle from '../components/anchor-link-for-project-title'
 import SEO from "../components/seo"
-
 import BackToCatalogue from '../components/back_to_catalogue'
-// import ProjectDetailEnd from '../components/project-detail-end'
-
 import Layout from '../components/layout'
 
 import StyleContext from '../contexts/StyleContext'
-
-import highlight from 'highlight.js'
 
 import mdx_shortcode from './mdx_shortcode'
 
@@ -36,7 +34,9 @@ function MdxProjectDetailTemplate(props) {
 
             <div className={target_layout.projectDetailHead}>
               <BackToCatalogue />
-              <h1>{props._frontmatter.title}</h1>
+              <AnchorLinkForProjectTitle {...props}>
+                <h1>{props._frontmatter.title}</h1>
+              </AnchorLinkForProjectTitle>
               <h2 className={target_layout.projectDetailDate}>{props._frontmatter.date}</h2>
             </div>
 
