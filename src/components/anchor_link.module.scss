@@ -3,8 +3,9 @@
   display: inline-flex;
   flex-flow: 'row nowrap';
   align-items: baseline;
-
+  cursor: pointer;
 }
+
 
 .link-icon {
   padding-left: 0.3rem;
@@ -15,6 +16,7 @@
 .test {
   display: inline-flex;
   align-items: baseline;
+
 }
 
 .test:hover .link-icon {

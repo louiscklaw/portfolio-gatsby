@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'gatsby'
 import ClipboardJS from 'clipboard'
 
+import { useStaticQuery, graphql } from "gatsby"
+
 import anchor_link_style from './anchor_link.module.scss'
 
 function AnchorLinkForProjectTitle(props){
@@ -15,8 +17,20 @@ function AnchorLinkForProjectTitle(props){
     .replace(/-$/g,'')
     .toLowerCase()
 
+  const { site } = useStaticQuery(
+      graphql`
+        query {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }
+      `
+    )
+
   React.useEffect(()=>{
-    new ClipboardJS('.btn');
+    new ClipboardJS('.clipboard-anchor-link');
     if (window.location.hash){
       try {
         if (document.querySelector(window.location.hash)){
@@ -29,14 +43,17 @@ function AnchorLinkForProjectTitle(props){
 
   return(
     <div>
-      <div className={anchor_link_style.test}>
-        <Link
+      <div
+        className={[anchor_link_style.test, "clipboard-anchor-link"].join(' ')}
+        data-clipboard-text={[site.siteMetadata.siteUrl,props.path,'#'].join('')}
+      >
+        <div
           className={anchor_link_style.anchorLink}
           to={props.path+'#'}
           id={diluted_text}
         >
           {html_shown}
-        </Link>
+        </div>
         <span className={anchor_link_style.linkIcon}>
           <i className="fa fa-link" aria-hidden="true"></i>
         </span>
