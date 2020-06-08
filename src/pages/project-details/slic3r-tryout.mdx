@@ -3,20 +3,21 @@ slug: "/slic3r-tryout/"
 date: "2019-05-04"
 title: "slic3r tryout"
 ---
-import YoutubeIframe from "../../components/youtube-iframe"
-
 import MdxProjectDetailTemplate from "../../templates/mdx-project-detail-template"
 export default MdxProjectDetailTemplate
 
-![](/slic3r_thimbnail.png)
+<HeaderImage src="/slic3r_thimbnail.png" />
 
-### What is it ?
+<AnchorLink {...props} ><h3>What is it ?:</h3></AnchorLink>
+
 An easy tool to export gcode from slic3r.
 
-### background:
+<AnchorLink {...props} ><h3>background:</h3></AnchorLink>
+
 The option of slic3r command linx options wasn’t availabe under linux as described. The tools written to help perorming export 3mf -> save to stl -> export gcode as a batch operation.
 
-### How to use:
+<AnchorLink {...props} ><h3>how to use:</h3></AnchorLink>
+
 - Clone repo:
 - run under linux
 - git clone git@github.com:louiscklaw/slic3r_batch_export.git
@@ -28,11 +29,6 @@ The option of slic3r command linx options wasn’t availabe under linux as descr
 - SLIC3R_BIN_PATH for slic3r binary
 - python batch_slic3r.py
 
-### How to use:
-https://louiscklaw.github.io/tradingview-tile-tryout
+<AnchorLink {...props} ><h3>References / Repositories:</h3></AnchorLink>
 
-### How it works:
-passing example
-
-### Repoistory:
-https://github.com/louiscklaw/slic3r_batch_export
+- <GithubLink repo_fullname="louiscklaw/slic3r_batch_export" />
