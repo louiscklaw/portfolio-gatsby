@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import ClipboardJS from 'clipboard'
 
 import { useStaticQuery, graphql } from "gatsby"
@@ -41,11 +40,21 @@ function AnchorLinkForProjectTitle(props){
     }
   },[])
 
+  let TXT_CLICK_TO_COPY_ANCHOR = 'click to copy anchor'
+  let TXT_COPIED = 'copied !'
+
   return(
     <div>
       <div
         className={[anchor_link_style.test, "clipboard-anchor-link"].join(' ')}
         data-clipboard-text={[site.siteMetadata.siteUrl,props.path,'#'].join('')}
+        data-tooltip="click to copy anchor"
+        onClick={(e)=>{
+          document.querySelector(`.${anchor_link_style.test}`).setAttribute('data-tooltip', TXT_COPIED)
+          setTimeout(() => {
+            document.querySelector(`.${anchor_link_style.test}`).setAttribute('data-tooltip', TXT_CLICK_TO_COPY_ANCHOR)
+          }, 1000)
+        }}
       >
         <div
           className={anchor_link_style.anchorLink}

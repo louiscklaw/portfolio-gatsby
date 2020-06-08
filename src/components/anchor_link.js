@@ -16,7 +16,6 @@ function AnchorLink(props){
     .toLowerCase()
 
   React.useEffect(()=>{
-    new ClipboardJS('.btn');
     if (window.location.hash){
       try {
         if (document.querySelector(window.location.hash)){
@@ -29,11 +28,14 @@ function AnchorLink(props){
 
   return(
     <div>
-      <div className={anchor_link_style.test}>
+      <div className={[anchor_link_style.test, "clipboard-anchor-link"].join(' ')} >
         <Link
           className={anchor_link_style.anchorLink}
           to={props.path+'#'+diluted_text}
           id={diluted_text}
+
+
+
         >
           {html_shown}
         </Link>
