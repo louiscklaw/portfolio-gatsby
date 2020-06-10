@@ -2,6 +2,8 @@
 *cache
 src/build_info.js
 
+screenshots
+
 logs
 *.log
 npm-debug.log*
