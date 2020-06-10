@@ -38,12 +38,12 @@ function DateLabel(props){
   if (props._frontmatter.date){
     return (
       <div className={target_layout.dateLabel} >
-        <span className="fa-calendar-icon">
+        <div className={target_layout.dateIcon}>
           <i class="fas fa-calendar-alt"></i>
-        </span>
-        <span>
+        </div>
+        <div>
           {props._frontmatter.date}
-        </span>
+        </div>
       </div>
     )
   }else{
@@ -51,6 +51,22 @@ function DateLabel(props){
       <></>
     )
   }
+}
+
+
+
+function SharePost(props){
+  const {target_layout} = React.useContext(StyleContext)
+  return(
+    <div className={target_layout.sharePost}>
+      <div className={target_layout.shareIcon}>
+        <i className="fas fa-share-alt"></i>
+      </div>
+      <div>
+        share this
+      </div>
+    </div>
+  )
 }
 
 function MdxProjectDetailTemplate(props) {
@@ -86,6 +102,7 @@ function MdxProjectDetailTemplate(props) {
 
               <div className={target_layout.projectDetailDate} >
                 <DateLabel {...props} />
+                <SharePost {...props} />
               </div>
 
             </div>

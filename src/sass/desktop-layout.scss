@@ -6,11 +6,37 @@ $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
 
+.share-post {
+  // background-color: red;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.share-icon {
+  // background-color: gold;
+  margin-right: 0.5rem;
+}
+
 .tags-list{
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 1rem 1rem;
+}
+
+.date-icon{
+  // background-color: red;
+  // width: 30%;
+  margin-right: 0.5rem;
+}
+
+.date-label {
+  // width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  // justify-content: center;
+  margin-bottom: 0.5rem;
+
 }
 
 .project-detail-container {
@@ -74,6 +100,9 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
         font-size: 0.8em;
         width: 10%;
 
+        display: flex;
+        flex-flow: column nowrap;
+
       }
     }
 
@@ -85,12 +114,6 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
   }
 }
 
-
-.date-label {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 
 .greetings {
   font-size: 2em;
