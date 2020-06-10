@@ -1,15 +1,33 @@
+.anchor-link {
+  margin: 1rem 0rem; }
+
+.header-image {
+  margin: 3rem 0rem; }
+
+.share-post {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0.5rem 0rem; }
+
+.share-icon {
+  margin-right: 0.5rem; }
+
 .tags-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 1rem 1rem; }
 
+.date-icon {
+  margin-right: 0.5rem; }
+
 .date-label {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 1rem; }
+  margin: 0.5rem 0rem; }
 
 .project-detail-container {
   padding: 0px 5% 20% 5%;
@@ -34,7 +52,7 @@
     width: 100%;
     flex-flow: column;
     justify-content: space-between;
-    padding: 8% 0px;
+    padding: 2rem 0px;
     text-align: center; }
     .project-detail-container .project-detail-head .project-detail-date {
       font-size: 0.8em; }

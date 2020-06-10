@@ -3,10 +3,12 @@ import {Link} from 'gatsby'
 import ClipboardJS from 'clipboard'
 
 import anchor_link_style from './anchor_link.module.scss'
+import StyleContext from '../contexts/StyleContext'
 
 function AnchorLink(props){
   let html_shown = props.children
   let text_from_html_shown = html_shown.props.children
+  const {target_layout} = React.useContext(StyleContext)
 
   let diluted_text = text_from_html_shown
     .replace(/[\ :]/g,'-')
@@ -27,7 +29,7 @@ function AnchorLink(props){
   },[])
 
   return(
-    <div>
+    <div className={target_layout.anchorLink}>
       <div className={[anchor_link_style.test, "clipboard-anchor-link"].join(' ')} >
         <Link
           className={anchor_link_style.anchorLink}

@@ -34,7 +34,7 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-$link-hover: #ecf0f1;
+$link-hover: $project-detail-link-hover-color;
 
 // tags
 $tag-background-color: $portfolio-accent-color;

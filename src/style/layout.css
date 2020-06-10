@@ -307,7 +307,7 @@ a {
   a strong {
     color: currentColor; }
   a:hover {
-    color: #ecf0f1; }
+    color: #7392b2; }
 
 code {
   background-color: whitesmoke;
@@ -976,7 +976,7 @@ a.box:active {
     margin-right: calc(-0.5em - 2px); }
   .button:hover, .button.is-hovered {
     border-color: #D0D1CD;
-    color: #ecf0f1; }
+    color: #7392b2; }
   .button:focus, .button.is-focused {
     border-color: #3273dc;
     color: #363636; }
@@ -3477,7 +3477,7 @@ a.tag:hover {
     justify-content: center;
     padding: 0 0.75em; }
     .breadcrumb a:hover {
-      color: #ecf0f1; }
+      color: #7392b2; }
   .breadcrumb li {
     align-items: center;
     display: flex; }
@@ -4859,7 +4859,7 @@ a.navbar-item,
   .pagination-next:hover,
   .pagination-link:hover {
     border-color: #D0D1CD;
-    color: #ecf0f1; }
+    color: #7392b2; }
   .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus {

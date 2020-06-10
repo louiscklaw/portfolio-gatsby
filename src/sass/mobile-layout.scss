@@ -5,11 +5,38 @@ $project-detail-background-color: #ecf0f1;
 $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 
+.anchor-link{
+  margin: 1rem 0rem;
+}
+
+.header-image {
+  margin: 3rem 0rem;
+}
+
+.share-post {
+  // background-color: red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0.5rem 0rem;
+}
+
+.share-icon {
+  // background-color: gold;
+  margin-right: 0.5rem;
+}
+
 .tags-list{
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 1rem 1rem;
+}
+
+.date-icon{
+  // background-color: red;
+  // width: 30%;
+  margin-right: 0.5rem;
 }
 
 .date-label {
@@ -18,7 +45,7 @@ $project-detail-link-color: #2c3e50;
   justify-content: center;
 
   width: 100%;
-  margin-top: 1rem;
+  margin: 0.5rem 0rem;
 }
 
 .project-detail-container {
@@ -54,7 +81,7 @@ $project-detail-link-color: #2c3e50;
 
     flex-flow: column;
     justify-content: space-between;
-    padding: 8% 0px;
+    padding: 2rem 0px;
 
     text-align: center;
 

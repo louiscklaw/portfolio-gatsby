@@ -6,6 +6,7 @@ import AnchorLinkForProjectTitle from '../components/anchor-link-for-project-tit
 import SEO from "../components/seo"
 import BackToCatalogue from '../components/back_to_catalogue'
 import Layout from '../components/layout'
+import TestShareButton from '../components/test_share_button'
 
 import StyleContext from '../contexts/StyleContext'
 
@@ -63,7 +64,7 @@ function SharePost(props){
         <i className="fas fa-share-alt"></i>
       </div>
       <div>
-        share this
+        <TestShareButton href={props._frontmatter.slug}/>
       </div>
     </div>
   )
