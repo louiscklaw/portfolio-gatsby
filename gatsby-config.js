@@ -3,7 +3,7 @@ module.exports = {
     title: `louiscklaw portfolio`,
     description: `This is the portfolio of louiscklaw`,
     author: `@louiscklaw`,
-    siteUrl: `https://louiscklaw.github.io`,
+    siteUrl: `https://portfolio.louislabs.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -39,6 +39,17 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          `/test-markdown`,
+          `/test*`,
+          `/project1`,
+          `/project2`
+        ]
+      }
+    },
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-mdx`
   ],

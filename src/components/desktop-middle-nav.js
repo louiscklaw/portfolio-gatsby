@@ -26,11 +26,11 @@ function DesktopMiddleNav(){
             credits
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/about/" className="is-text">
             google search trend
           </Link>
-        </li>
+        </li> */}
 
         <li>
           <a href="https://louiscklaw.github.io/travis-playlist/" className="is-text" target="_blank" rel="noreferrer">

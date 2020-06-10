@@ -262,7 +262,7 @@ th {
     text-align: left; }
 
 html {
-  background-color: #EFF0EB;
+  background-color: #ecf0f1;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2457,9 +2457,9 @@ a.box:active {
 
 .tag:not(body) {
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #2c3e50;
   border-radius: 4px;
-  color: #757763;
+  color: #ecf0f1;
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
@@ -2555,9 +2555,9 @@ a.box:active {
       height: 50%;
       width: 1px; }
     .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
-      background-color: #e8e8e8; }
+      background-color: #233140; }
     .tag:not(body).is-delete:active {
-      background-color: #dbdbdb; }
+      background-color: #1a252f; }
   .tag:not(body).is-rounded {
     border-radius: 290486px; }
 
