@@ -8,7 +8,7 @@ file_name = (address, screen_width) => {
   return `./${address.replace('/','_')}_${screen_width}.png`
 }
 
-screen_width.forEach( sw => {
+screen_width.map( sw => {
   [
     'about',
     'project-details/trading-view-dashboard',
@@ -17,7 +17,7 @@ screen_width.forEach( sw => {
     'project-details/youtube-splitview-tryout'
   ].map(
     address => {
-      exec(`node ../scripts/screenshooter.js --waitfor 1000 --fullpage --w ${sw} --url http://localhost:8000/${address} --file ${file_name(address, sw)}`,{
+      exec(`node ../scripts/screenshooter.js --waitfor 3000 --fullpage --w ${sw} --url http://localhost:8000/${address} --file ${file_name(address, sw)}`,{
         cwd: './screenshots'
       }, (err, stdout, stderr)=>{
         if (err) return 99 ;

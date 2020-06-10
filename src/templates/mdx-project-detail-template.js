@@ -6,11 +6,12 @@ import AnchorLinkForProjectTitle from '../components/anchor-link-for-project-tit
 import SEO from "../components/seo"
 import BackToCatalogue from '../components/back_to_catalogue'
 import Layout from '../components/layout'
-import TestShareButton from '../components/test_share_button'
+import FacebookShareButton from '../components/facebook_share_button'
 
 import StyleContext from '../contexts/StyleContext'
 
 import mdx_shortcode from './mdx_shortcode'
+import LinkedInShareButton from "../components/linkedin-share-button"
 
 function Tags(props){
   const {target_layout} = React.useContext(StyleContext)
@@ -63,8 +64,9 @@ function SharePost(props){
       <div className={target_layout.shareIcon}>
         <i className="fas fa-share-alt"></i>
       </div>
-      <div>
-        <TestShareButton href={props._frontmatter.slug}/>
+      <div style={{display: 'none'}}>
+        <FacebookShareButton {...props}/>
+        <LinkedInShareButton {...props}/>
       </div>
     </div>
   )

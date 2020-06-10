@@ -1,9 +1,12 @@
 .header-image {
   margin: 1rem 0rem; }
 
+.icon-with-space {
+  margin-right: 0.2rem; }
+
 .share-post {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: column nowrap; }
 
 .share-icon {
   margin-right: 0.5rem; }
