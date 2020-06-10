@@ -1,15 +1,18 @@
 import React from 'react'
 
-class Footer extends React.Component{
-  render(){
+import StyleContext from '../contexts/StyleContext'
+
+function Footer() {
+  const {target_layout} = React.useContext(StyleContext)
+
     return(
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <footer className={target_layout.mobileFooter}>
+        <div className={`content has-text-centered `+target_layout.footerContent}>
+        <i class="far fa-copyright"></i> 2020 louislabs.
+        </div>
       </footer>
     )
-  }
+
 }
 
 export default Footer

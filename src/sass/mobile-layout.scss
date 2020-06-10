@@ -5,6 +5,17 @@ $project-detail-background-color: #ecf0f1;
 $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 
+.footer-content {
+}
+
+.mobile-footer {
+  background-color: $portfolio-accent-color;
+  color: $portfolio-text-color;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+}
+
 .anchor-link{
   margin: 1rem 0rem;
 }

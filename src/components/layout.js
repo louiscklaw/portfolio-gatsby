@@ -4,16 +4,14 @@ import PropTypes from "prop-types"
 import LeftSideBar from './left-side-bar'
 import Footer from './footer'
 
+import StyleContext from '../contexts/StyleContext'
 import GlobalContext from '../contexts/GlobalContext'
 
-import desktop_layout from '../style/desktop-layout.module.css'
-import mobile_layout from '../style/mobile-layout.module.css'
 import "../style/layout.css"
 
-
 function Layout({children}) {
+  const {target_layout} = React.useContext(StyleContext)
   const {isMobile} = React.useContext(GlobalContext)
-  let target_layout = isMobile()? mobile_layout:desktop_layout
 
   return(
     <>
@@ -25,7 +23,7 @@ function Layout({children}) {
         {children}
 
       </div>
-      {/* <Footer /> */}
+      { isMobile() ? <Footer /> : ''}
     </>
   )
 }
