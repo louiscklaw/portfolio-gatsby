@@ -198,6 +198,10 @@ $project-detail-link-color: #2c3e50;
   .project-item {
     height: 15vh;
 
+    &:hover {
+      color: $portfolio-text-color;
+    }
+
     li {
       height: 100%;
 

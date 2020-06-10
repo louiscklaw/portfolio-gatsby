@@ -80,6 +80,8 @@
   height: 25%; }
   .project-item:hover .projectLink {
     display: block; }
+  .project-item:hover {
+    color: #ecf0f1; }
   .project-item li {
     background-position: center;
     /* Center the image */

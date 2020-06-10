@@ -142,6 +142,10 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
     display: block;
   }
 
+  &:hover {
+    color: $portfolio-text-color;
+  }
+
   li {
     background-position: center;
     /* Center the image */
