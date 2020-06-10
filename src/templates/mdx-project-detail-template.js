@@ -12,6 +12,7 @@ import StyleContext from '../contexts/StyleContext'
 import mdx_shortcode from './mdx_shortcode'
 
 function Tags(props){
+  const {target_layout} = React.useContext(StyleContext)
 
   if (typeof(props._frontmatter.tags) == "undefined"){
     return(
@@ -20,24 +21,30 @@ function Tags(props){
     )
   }else{
     return (
-      <div className="tags are-medium">
-        {
-          props._frontmatter.tags.map( x => <span className="tag">{x}</span> )
-        }
+      <div className={target_layout.tagsList}>
+        <div className="tags are-medium">
+          {
+            props._frontmatter.tags.map( x => <span className="tag">{x}</span> )
+          }
+        </div>
       </div>
     )
   }
 }
 
 function DateLabel(props){
+  const {target_layout} = React.useContext(StyleContext)
+
   if (props._frontmatter.date){
     return (
-      <>
+      <div className={target_layout.dateLabel} >
         <span className="fa-calendar-icon">
           <i class="fas fa-calendar-alt"></i>
         </span>
-        {props._frontmatter.date}
-      </>
+        <span>
+          {props._frontmatter.date}
+        </span>
+      </div>
     )
   }else{
     return(
@@ -77,9 +84,9 @@ function MdxProjectDetailTemplate(props) {
                 <Tags {...props} />
               </div>
 
-              <h2 className={target_layout.projectDetailDate} style={{width: '10%'}}>
+              <div className={target_layout.projectDetailDate} >
                 <DateLabel {...props} />
-              </h2>
+              </div>
 
             </div>
 

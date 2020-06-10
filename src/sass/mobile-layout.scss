@@ -5,6 +5,22 @@ $project-detail-background-color: #ecf0f1;
 $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 
+.tags-list{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.date-label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .project-detail-container {
   padding: 0px 5% 20% 5%;
   background-color: $project-detail-background-color;
