@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
+$portfolio-accent-color: #2c3e50;
+$portfolio-text-color: #ecf0f1;
+$project-detail-background-color: #ecf0f1;
+$project-detail-text-color: #2c3e50;
+$project-detail-link-color: #2c3e50;
+$project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
+
 $purple: #8A4D76;
 $link-color: #ecf0f1;
 
@@ -22,21 +29,14 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $project-detail-background-color;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-
 $link-hover: #ecf0f1;
-$portfolio-accent-color: #2c3e50;
-$portfolio-text-color: #ecf0f1;
-
-$project-detail-background-color: #ecf0f1;
-$project-detail-text-color: #2c3e50;
 
 // tags
-$portfolio-accent-color: #2c3e50;
 $tag-background-color: $portfolio-accent-color;
 $tag-color: $link-color;
 // $tag-color: red;
