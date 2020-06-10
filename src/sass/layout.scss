@@ -27,12 +27,19 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+
 $link-hover: #ecf0f1;
 $portfolio-accent-color: #2c3e50;
 $portfolio-text-color: #ecf0f1;
 
 $project-detail-background-color: #ecf0f1;
 $project-detail-text-color: #2c3e50;
+
+// tags
+$portfolio-accent-color: #2c3e50;
+$tag-background-color: $portfolio-accent-color;
+$tag-color: $link-color;
+// $tag-color: red;
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";

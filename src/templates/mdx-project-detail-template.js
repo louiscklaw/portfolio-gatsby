@@ -11,6 +11,24 @@ import StyleContext from '../contexts/StyleContext'
 
 import mdx_shortcode from './mdx_shortcode'
 
+function Tags(props){
+
+  if (typeof(props._frontmatter.tags) == "undefined"){
+    return(
+      <>
+      </>
+    )
+  }else{
+    return (
+      <div className="tags are-medium">
+        {
+          props._frontmatter.tags.map( x => <span className="tag">{x}</span> )
+        }
+      </div>
+    )
+  }
+}
+
 function DateLabel(props){
   if (props._frontmatter.date){
     return (
@@ -51,9 +69,13 @@ function MdxProjectDetailTemplate(props) {
 
             <div className={target_layout.projectDetailHead}>
               <BackToCatalogue />
-              <AnchorLinkForProjectTitle {...props}>
-                <h1>{props._frontmatter.title}</h1>
-              </AnchorLinkForProjectTitle>
+
+              <div style={{textAlign: "center"}}>
+                <AnchorLinkForProjectTitle {...props}>
+                  <h1>{props._frontmatter.title}</h1>
+                </AnchorLinkForProjectTitle>
+                <Tags {...props} />
+              </div>
 
               <h2 className={target_layout.projectDetailDate} style={{width: '10%'}}>
                 <DateLabel {...props} />
