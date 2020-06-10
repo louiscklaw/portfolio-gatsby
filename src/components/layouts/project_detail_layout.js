@@ -21,9 +21,9 @@ function ProjectDetailLayout({children}) {
           <LeftSideBar />
         </div>
 
-      <main>
-        {children}
-      </main>
+        <main>
+          {children}
+        </main>
 
       </div>
       {/* <Footer /> */}
