@@ -23,8 +23,8 @@ module.exports = {
         name: `louiscklaw portfolio`,
         short_name: `louis_portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#2C3E50`,
+        theme_color: `#2C3E50`,
         display: `minimal-ui`,
         icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
       },
