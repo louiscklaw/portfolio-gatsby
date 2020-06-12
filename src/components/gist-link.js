@@ -17,21 +17,3 @@ function GistLink(props){
 }
 
 export default GistLink
-
-
-{/*
-  <a href={`//gist.github.com/${props.repo_fullname}`} target="_blank" rel="noreferrer" >
-    <span>{ children ? children : props.repo_fullname}</span>
-    <i className="fab fa-github" style={{marginLeft: '0.2rem'}} aria-hidden="true" />
-    <i className="fas fa-external-link-alt" style={{marginLeft: '0.2rem'}} aria-hidden="true" />
-  </a>
-*/}
-
-
-{/*
-  <div className={style.sourceGistLink}>
-    <a href={`//gist.github.com/${gist_id}`}>
-      {gist_id}
-    </a>
-  </div>
-*/}

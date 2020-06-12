@@ -11,8 +11,8 @@ function AnchorLink(props){
   const {target_layout} = React.useContext(StyleContext)
 
   let diluted_text = text_from_html_shown
-    .replace(/[\ :]/g,'-')
-    .replace(/[\/]/g,'-or-')
+    .replace(/[ :]/g,'-')
+    .replace(/[/]/g,'-or-')
     .replace(/--/g,'-')
     .replace(/-$/g,'')
     .toLowerCase()

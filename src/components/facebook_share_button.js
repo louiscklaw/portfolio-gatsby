@@ -8,7 +8,7 @@ function FacebookShareButton(props){
 
   return(
     <div class="fb-share-button" data-href={href} data-layout="button_count" data-size="small">
-      <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(href)}`} class="fb-xfbml-parse-ignore">
+      <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(href)}`} class="fb-xfbml-parse-ignore" rel="noreferrer">
 
         <span className={target_layout.iconWithSpace}>
           <i class="fab fa-facebook-square" aria-hidden="true" />

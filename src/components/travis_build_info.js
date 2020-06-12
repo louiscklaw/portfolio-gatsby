@@ -7,8 +7,8 @@ function TravisBuildInfo(){
 
   return(
     <div className={target_layout.buildInfo}>
-      <a href="https://travis-ci.com/louiscklaw/portfolio-gatsby" target="_blank">
-        <img src="https://travis-ci.com/louiscklaw/portfolio-gatsby.svg?branch=master"/>
+      <a href="https://travis-ci.com/louiscklaw/portfolio-gatsby" target="_blank" rel="noreferrer">
+        <img src="https://travis-ci.com/louiscklaw/portfolio-gatsby.svg?branch=master" alt="current portfolio build status"/>
       </a>
     </div>
   )

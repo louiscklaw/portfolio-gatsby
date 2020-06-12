@@ -8,7 +8,7 @@ function SimpleCredit(){
 
   return(
     <div className={target_layout.simpleCredit}>
-      ❤️ coded by louiscklaw. <br/>
+      <span role="img">💖</span> coded by louiscklaw. <br/>
       Built on the solder of <br/>
       <Link to="/credits/">THESE GIANTS</Link>
     </div>
