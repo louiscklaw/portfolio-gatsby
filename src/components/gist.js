@@ -1,8 +1,10 @@
 import React from 'react'
-import highlight from 'highlight.js'
+
 import GistLink from './gist-link'
+import highlight from 'highlight.js'
 
 import style from './gist.module.scss'
+import LoadingAni from './loading-ani'
 
 const get_pre_code = (ele_id,code_body, highglight_land) => {
 return `
@@ -10,24 +12,16 @@ return `
 `.trim()
 }
 
-function Loading(){
-  return(
-    <>
-      Loading
-    </>
-  )
-}
-
 function Gist(props){
   let {gist_id, hl_lang} = props
   let random_id = `gist_id_${Math.random().toString().substring(2,10)}`
 
   React.useEffect(()=>{
-
     fetch(`https://gist.githubusercontent.com/${gist_id}/raw`)
     .then(res => res.text())
     .then(text => {
-      document.querySelector('.result').innerHTML = get_pre_code(random_id, text, hl_lang)
+
+      document.querySelector(`.${style.gistSource}`).innerHTML = get_pre_code(random_id, text, hl_lang)
     })
     .then(() => {
       highlight.highlightBlock(document.querySelector(`#${random_id}`))
@@ -36,9 +30,15 @@ function Gist(props){
 
   return(
     <>
-      <div className={style.gistBody}>
-        <GistLink {...props} />
-        <div className="result"></div>
+      <div className={style.gistContainer}>
+        <div className={style.gistHead}>
+          <GistLink {...props} />
+        </div>
+        <div className={style.gistBody}>
+          <div className={style.gistSource}>
+            <LoadingAni />
+          </div>
+        </div>
       </div>
     </>
   )

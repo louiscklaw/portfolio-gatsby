@@ -1,4 +1,11 @@
 
-.gist-body {
+.gist-container {
   margin: 0.5rem 0.5rem;
+}
+
+.gist-source {
+  min-height: 20vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
