@@ -31,7 +31,7 @@ shell.ls('*.png').map((expected_png_filename) => {
 
   var diff_int_result = pixelmatch(
     expected_png_content.data, actual_png_content.data,
-    diff.data, width, height, {threshold: 0.1}
+    diff.data, width, height, {threshold: 0.2}
     )
 
   fs.writeFileSync(diff_png_filepath, PNG.sync.write(diff))
