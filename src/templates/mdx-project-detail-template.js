@@ -94,7 +94,7 @@ function MdxProjectDetailTemplate(props) {
           <div className={target_layout.projectDetail}>
 
             <div className={target_layout.projectDetailHead}>
-              <BackToCatalogue />
+              <BackToCatalogue show_arrow={false}/>
 
               <div style={{textAlign: "center"}}>
                 <AnchorLinkForProjectTitle {...props}>
@@ -116,7 +116,7 @@ function MdxProjectDetailTemplate(props) {
             </div>
 
             <div className={target_layout.projectDetailFooter}>
-              <BackToCatalogue />
+              <BackToCatalogue show_arrow={true} />
             </div>
 
           </div>

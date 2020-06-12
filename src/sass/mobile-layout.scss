@@ -6,10 +6,23 @@ $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
 
-.footer-content {
+.page-back-button {
+  margin-top: 3em;
 }
 
+.back-to-catalogue-container {
+  margin: 1.5rem 0rem;
+  text-align: center;
+}
 
+.back-to-catalogue-center{
+  text-align: center;
+}
+
+.back-left-arrow {
+
+
+}
 
 .about-me-detail-container{
   background-color: $project-detail-background-color;
@@ -28,8 +41,6 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-
-    padding-bottom: 10%;
   }
 
   .detail-date {
@@ -46,9 +57,6 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
       text-align: justify;
       text-justify: inter-word;
 
-      .page-back-button{
-        margin-top: 3em;
-      }
     }
   }
 

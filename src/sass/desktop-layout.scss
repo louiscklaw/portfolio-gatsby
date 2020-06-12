@@ -6,6 +6,18 @@ $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
 
+.page-back-button {
+  margin-top: 3em;
+}
+
+.back-to-catalogue-container {
+  margin: 1.5rem 0rem;
+}
+
+.back-to-catalogue-center{
+  text-align: center;
+}
+
 .back-left-arrow {
   padding-right: 0.5rem;
 }

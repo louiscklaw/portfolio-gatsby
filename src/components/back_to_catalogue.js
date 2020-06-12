@@ -6,23 +6,37 @@ import GlobalContext from '../contexts/GlobalContext'
 
 function LeftArrow(){
   const {target_layout} = React.useContext(StyleContext)
+  const {isMobile} = React.useContext(GlobalContext)
 
-  return(
-    <span className={target_layout.backLeftArrow}>
-      <i class="fas fa-chevron-circle-left"></i>
-    </span>
-  )
+  if(isMobile()){
+    return(
+      <span className={target_layout.backLeftArrow}>
+        <i class="fas fa-chevron-circle-left fa-3x"></i>
+      </span>
+    )
+  }else{
+    return(
+      <span className={target_layout.backLeftArrow}>
+        <i class="fas fa-chevron-circle-left"></i>
+      </span>
+    )
+  }
+
 }
 
-function BackToCatalogue({show_arrow}){
+function BackToCatalogue(props){
   const {isMobile} = React.useContext(GlobalContext)
   const {target_layout} = React.useContext(StyleContext)
 
+  const {show_arrow} = props
+
   return(
-    <>
-      { show_arrow ? <LeftArrow /> : ''}
-      {isMobile() ? '' : <Link to="/project-list">Back to catalogue</Link>}
-    </>
+    <div className={target_layout.backToCatalogueContainer}>
+      <Link to="/project-list">
+        { show_arrow ? <LeftArrow /> : ''}
+        {isMobile() ? '' : "Back to catalogue"}
+      </Link>
+    </div>
   )
 }
 

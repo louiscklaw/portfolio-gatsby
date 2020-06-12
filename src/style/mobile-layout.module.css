@@ -1,3 +1,13 @@
+.page-back-button {
+  margin-top: 3em; }
+
+.back-to-catalogue-container {
+  margin: 1.5rem 0rem;
+  text-align: center; }
+
+.back-to-catalogue-center {
+  text-align: center; }
+
 .about-me-detail-container {
   background-color: #ecf0f1;
   color: #2c3e50;
@@ -10,8 +20,7 @@
     width: 100%;
     flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10%; }
+    align-items: center; }
   .about-me-detail .detail-date {
     font-size: 0.8em;
     display: flex;
@@ -20,8 +29,6 @@
     padding: 0px 5%;
     text-align: justify;
     text-justify: inter-word; }
-    .about-me-detail .detail-body .paper-layout .page-back-button {
-      margin-top: 3em; }
   .about-me-detail .detail-footer {
     font-size: 1.5em;
     padding-top: 5%; }

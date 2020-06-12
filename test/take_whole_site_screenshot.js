@@ -7,6 +7,7 @@ var screen_width = [1920]
 
 var test_paths = [
   'about',
+  'project-list',
   'project-details/trading-view-dashboard',
   'project-details/appium-behave-notes',
   'test-markdown-mdx',

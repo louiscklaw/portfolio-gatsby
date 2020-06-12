@@ -9,6 +9,8 @@ set -exu
 rm -rf test/screenshots/diff/*.png
 rm -rf test/screenshots/actual/*.png
 
+yarn
+yarn build
 yarn serve &
 SERVER_PID=$!
 
