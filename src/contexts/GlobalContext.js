@@ -2,10 +2,17 @@ import React from "react"
 
 import {MAX_MOBILE_SCREEN_WIDTH} from '../config'
 
+
+const isDevelopmentPlant = () => {
+  return process.env.NODE_ENV==='development'
+}
+
+
 const defaultState = {
   helloworld: false,
   windowInnerWidth:0,
   windowInnerHeight:0,
+  development_plant: isDevelopmentPlant(),
   helloworldFunc: () => {},
   isMobile:()=>{},
   checkStagingSite: () => { return false}

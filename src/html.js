@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import GoogleAnalytics from './components/google-analytics'
+
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
@@ -36,7 +38,6 @@ export default function HTML(props) {
         {props.postBodyComponents}
 
         <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -53,10 +54,11 @@ export default function HTML(props) {
               };
               // Initialize Firebase
               firebase.initializeApp(firebaseConfig);
-              firebase.analytics();
               `,
           }}
         />
+
+        <GoogleAnalytics />
 
       </body>
     </html>
