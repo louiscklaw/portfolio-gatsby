@@ -1,3 +1,54 @@
+.about-me-detail-container {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  width: 100%; }
+
+.about-me-detail {
+  padding: 8%; }
+  .about-me-detail .detail-head {
+    display: inline-flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10%; }
+  .about-me-detail .detail-date {
+    font-size: 0.8em;
+    display: flex;
+    flex-flow: column nowrap; }
+  .about-me-detail .detail-body .paper-layout {
+    padding: 0px 5%;
+    text-align: justify;
+    text-justify: inter-word; }
+    .about-me-detail .detail-body .paper-layout .page-back-button {
+      margin-top: 3em; }
+  .about-me-detail .detail-footer {
+    font-size: 1.5em;
+    padding-top: 5%; }
+  .about-me-detail ul {
+    list-style: disc;
+    padding-left: 5%; }
+  .about-me-detail h1 {
+    font-size: 1.8em; }
+  .about-me-detail h2 {
+    font-size: 1.4em; }
+  .about-me-detail h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem; }
+  .about-me-detail a {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold; }
+  .about-me-detail a:hover {
+    color: #7392b2; }
+  .about-me-detail img {
+    border-radius: 0.3rem;
+    filter: drop-shadow(0 0 0.5rem grey); }
+
 .mobile-footer {
   background-color: #2c3e50;
   color: #ecf0f1;
@@ -25,15 +76,14 @@
   justify-content: center;
   margin: 1rem 1rem; }
 
-.date-icon {
-  margin-right: 0.5rem; }
-
 .date-label {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   width: 100%;
   margin: 0.5rem 0rem; }
+  .date-label svg {
+    margin-right: 0.5rem; }
 
 .project-detail-container {
   padding: 0px 5% 20% 5%;

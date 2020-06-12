@@ -4,8 +4,99 @@ $portfolio-text-color: #ecf0f1;
 $project-detail-background-color: #ecf0f1;
 $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
+$project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
 
 .footer-content {
+}
+
+
+
+.about-me-detail-container{
+  background-color: $project-detail-background-color;
+  color: $project-detail-text-color;
+
+  width: 100%;
+
+}
+
+.about-me-detail {
+  padding: 8%;
+
+  .detail-head {
+    display: inline-flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 10%;
+  }
+
+  .detail-date {
+    font-size: 0.8em;
+    // width: 15%;
+
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .detail-body {
+    .paper-layout {
+      padding: 0px 5%;
+      text-align: justify;
+      text-justify: inter-word;
+
+      .page-back-button{
+        margin-top: 3em;
+      }
+    }
+  }
+
+  .detail-footer {
+    font-size: 1.5em;
+    padding-top: 5%;
+  }
+
+
+  ul {
+    list-style: disc;
+    padding-left: 5%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $project-detail-link-color;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $project-detail-link-hover-color;
+  }
+
+
+  img {
+    border-radius: 0.3rem;
+    filter: drop-shadow(0 0 0.5rem grey);
+  }
+
 }
 
 
@@ -20,6 +111,7 @@ $project-detail-link-color: #2c3e50;
 
 .anchor-link{
   margin: 1rem 0rem;
+
 }
 
 .header-image {
@@ -49,16 +141,20 @@ $project-detail-link-color: #2c3e50;
 .date-icon{
   // background-color: red;
   // width: 30%;
-  margin-right: 0.5rem;
+  // margin-right: 0.5rem;
 }
 
 .date-label {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
 
   width: 100%;
   margin: 0.5rem 0rem;
+
+  svg {
+    margin-right: 0.5rem;
+  }
 }
 
 .project-detail-container {

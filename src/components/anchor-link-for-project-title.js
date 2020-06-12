@@ -5,7 +5,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import anchor_link_style from './anchor_link.module.scss'
 
+import GlobalContext from '../contexts/GlobalContext'
+
 function AnchorLinkForProjectTitle(props){
+  const {isMobile} = React.useContext(GlobalContext)
+
   let html_shown = props.children
   let text_from_html_shown = html_shown.props.children
 
@@ -63,7 +67,7 @@ function AnchorLinkForProjectTitle(props){
         >
           {html_shown}
         </div>
-        <span className={anchor_link_style.linkIcon}>
+        <span className={isMobile() ? anchor_link_style.linkIconMobile : anchor_link_style.linkIcon}>
           <i className="fa fa-link" aria-hidden="true"></i>
         </span>
       </div>
