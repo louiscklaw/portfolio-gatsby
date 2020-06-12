@@ -19,9 +19,9 @@ jobs:
       script:
         - scripts/build.sh
 
-    - stage: Test
-      script:
-        - test/test.sh
+    # - stage: Test
+    #   script:
+    #     - test/test.sh
 
 
     - stage: Deploy
