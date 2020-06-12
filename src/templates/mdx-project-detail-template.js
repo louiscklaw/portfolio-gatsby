@@ -41,7 +41,7 @@ function DateLabel(props){
     return (
       <div className={target_layout.dateLabel} >
         <div className={target_layout.dateIcon}>
-          <i class="fas fa-calendar-alt" aria-hidden="true" />
+          <i className="fas fa-calendar-alt" aria-hidden="true" />
         </div>
         <div>
           {props._frontmatter.date}
@@ -105,7 +105,7 @@ function MdxProjectDetailTemplate(props) {
 
               <div className={target_layout.projectDetailDate} >
                 <DateLabel {...props} />
-                <SharePost {...props} />
+                {/* <SharePost {...props} /> */}
               </div>
 
             </div>

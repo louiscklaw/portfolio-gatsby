@@ -8,6 +8,7 @@ import HeaderImage from '../components/header-image'
 import YoutubeIframe from '../components/youtube-iframe'
 import ProjectImage from '../components/project-image'
 import AnchorLink from '../components/anchor_link'
+import Gist from '../components/gist'
 
 let short_code = {
   TestingRedbox,
@@ -17,7 +18,8 @@ let short_code = {
   HeaderImage,
   YoutubeIframe,
   ProjectImage,
-  AnchorLink
+  AnchorLink,
+  Gist
 }
 
 
