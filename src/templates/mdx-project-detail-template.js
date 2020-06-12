@@ -41,7 +41,7 @@ function DateLabel(props){
     return (
       <div className={target_layout.dateLabel} >
         <div className={target_layout.dateIcon}>
-          <i class="fas fa-calendar-alt"></i>
+          <i class="fas fa-calendar-alt" aria-hidden="true" />
         </div>
         <div>
           {props._frontmatter.date}
@@ -62,7 +62,7 @@ function SharePost(props){
   return(
     <div className={target_layout.sharePost}>
       <div className={target_layout.shareIcon}>
-        <i className="fas fa-share-alt"></i>
+        <i className="fas fa-share-alt" aria-hidden="true" />
       </div>
       <div style={{display: 'none'}}>
         <FacebookShareButton {...props}/>

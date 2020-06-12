@@ -11,7 +11,7 @@ function FacebookShareButton(props){
       <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(href)}`} class="fb-xfbml-parse-ignore">
 
         <span className={target_layout.iconWithSpace}>
-          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-facebook-square" aria-hidden="true" />
         </span>
 
         <span>Post to facebook</span>

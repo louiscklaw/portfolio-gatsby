@@ -7,8 +7,8 @@ function GithubLink(props){
         target="_blank" rel="noreferrer"
         >
         <span>{props.repo_fullname}</span>
-        <i className="fab fa-github" style={{marginLeft: '0.2rem'}}></i>
-        <i className="fas fa-external-link-alt" style={{marginLeft: '0.2rem'}}></i>
+        <i className="fab fa-github" style={{marginLeft: '0.2rem'}} aria-hidden="true" />
+        <i className="fas fa-external-link-alt" style={{marginLeft: '0.2rem'}} aria-hidden="true" />
         </a>
     </div>
   )
