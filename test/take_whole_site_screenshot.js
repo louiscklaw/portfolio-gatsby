@@ -28,15 +28,17 @@ png_file_path = (address, screen_width) => {
 screen_width
   .map( sw => {
     return test_paths.map( test_path => {
-        var command = `node test/screenshooter.js --waitfor 3000 --fullpage --w ${sw} --url http://localhost:9000/${test_path} --file "${png_file_path(test_path, sw)}" 2>&1`
+        var command = `node test/screenshooter.js --waitfor 5000 --fullpage --w ${sw} --url http://localhost:9000/${test_path} --file "${png_file_path(test_path, sw)}" 2>&1`
         return command
       })
       .map( capture_command => {
         exec(capture_command, (err, stdout, stderr) => {
           console.log(stderr)
           if (err) return process.exit(99)
-          console.log(stdout)
+
+          // console.log(stdout)
+
         })
-        console.log(capture_command)
+        // console.log(capture_command)
       })
   })

@@ -5,6 +5,10 @@ set -exu
 
 # visual regression
 # test/gatsby_background_serve.sh
+
+rm -rf test/screenshots/diff/*.png
+rm -rf test/screenshots/actual/*.png
+
 yarn serve &
 SERVER_PID=$!
 

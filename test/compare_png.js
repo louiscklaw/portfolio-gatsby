@@ -37,19 +37,9 @@ shell.ls('*.png').map((expected_png_filename) => {
   fs.writeFileSync(diff_png_filepath, PNG.sync.write(diff))
 
   if (diff_int_result > 100){
-    printFail(`diffing ${expected_png_filename} score:${diff_int_result} ...`)
+    printFail(`diff failed for ${expected_png_filename} score:${diff_int_result} ...`)
 
   } else{
-    printPass(`diff failed for file ${expected_png_filename} score:${diff_int_result}`)
+    printPass(`diff pass for file ${expected_png_filename} score:${diff_int_result}`)
   }
 })
-
-
-// const img1 = PNG.sync.read(fs.readFileSync('img1.png'));
-// const img2 = PNG.sync.read(fs.readFileSync('img2.png'));
-// const {width, height} = img1;
-// const diff = new PNG({width, height});
-
-// pixelmatch(img1.data, img2.data, diff.data, width, height, {threshold: 0.1});
-
-// fs.writeFileSync('diff.png', PNG.sync.write(diff));
