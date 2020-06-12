@@ -19,21 +19,21 @@ jobs:
       script:
         - scripts/build.sh
 
-    # - stage: Deploy
-    #   if: branch = master
-    #   script:
-    #     - npm install -g firebase-tools firebase-functions firebase-admin
-    #     - node scripts/update_build_info.js
-    #     - scripts/build.sh
+    - stage: Deploy
+      if: branch = master
+      script:
+        - npm install -g firebase-tools firebase-functions firebase-admin
+        - node scripts/update_build_info.js
+        - scripts/all_deploy.sh
 
-    #   deploy:
-    #     # production deploy
-    #     - provider: script
-    #       skip_cleanup: true
-    #       script: firebase deploy --token $FIREBASE_TOKEN --non-interactive
-    #       on:
-    #         all_branches: true
-    #         condition: $TRAVIS_BRANCH = "master"
+      deploy:
+        # production deploy
+        - provider: script
+          skip_cleanup: true
+          script: firebase deploy --token $FIREBASE_TOKEN --non-interactive
+          on:
+            all_branches: true
+            condition: $TRAVIS_BRANCH = "master"
 
     - stage: Merge
       script:
