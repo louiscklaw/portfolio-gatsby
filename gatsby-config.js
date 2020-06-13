@@ -50,7 +50,8 @@ module.exports = {
           `/test-markdown`,
           `/test*`,
           `/project1`,
-          `/project2`
+          `/project2`,
+          `/favourite_link`
         ]
       }
     },
