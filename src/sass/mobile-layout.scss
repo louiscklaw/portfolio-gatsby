@@ -302,7 +302,7 @@ $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
   flex-flow: column;
 
   .project-item {
-    height: 15vh;
+    min-height: 15vh;
 
     &:hover {
       color: $portfolio-text-color;
