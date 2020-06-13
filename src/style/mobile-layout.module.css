@@ -180,7 +180,7 @@
   display: flex;
   flex-flow: column; }
   .project-item-container .project-item {
-    height: 15vh; }
+    min-height: 15vh; }
     .project-item-container .project-item:hover {
       color: #ecf0f1; }
     .project-item-container .project-item li {

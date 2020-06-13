@@ -6,6 +6,10 @@ $project-detail-text-color: #2c3e50;
 $project-detail-link-color: #2c3e50;
 $project-detail-link-hover-color: lighten( $project-detail-link-color, 33% );
 
+.figure-container {
+  text-align: center;
+}
+
 .page-back-button {
   margin-top: 3em;
 }

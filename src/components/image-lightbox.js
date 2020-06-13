@@ -2,20 +2,26 @@ import React from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-const defaultState = {isOpen: false}
+import StyleContext from '../contexts/StyleContext'
 
 function ImageLightBox(props) {
+  const {target_layout} = React.useContext(StyleContext)
   // Declare a new state variable, which we'll call "count"
   const [is_open, updateIsOpen] = React.useState();
-  return (
-    <div>
+  let {caption} = props
 
-      <img
-        src={props.src}
-        onClick={( )=>{ updateIsOpen(true) }}
-        style={{cursor: "pointer",...props.style}}
-        alt={props.alt}
-      />
+  return (
+    <div className={target_layout.figureContainer}>
+
+      <figure>
+        <img
+          src={props.src}
+          onClick={( )=>{ updateIsOpen(true) }}
+          style={{cursor: "pointer",...props.style}}
+          alt={props.alt}
+        />
+        <figcaption style={{textDecoration:'underline'}}>{caption}</figcaption>
+      </figure>
 
       { is_open && (
 
