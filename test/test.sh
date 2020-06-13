@@ -9,8 +9,13 @@ set -exu
 rm -rf test/screenshots/diff/*.png
 rm -rf test/screenshots/actual/*.png
 
-yarn
-yarn build
+mkdir -p test/screenshots/diff
+mkdir -p test/screenshots/actual
+
+# rebuild whole site
+# TODO resume me
+# scripts/build.sh
+
 yarn serve &
 SERVER_PID=$!
 
