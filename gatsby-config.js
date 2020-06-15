@@ -51,7 +51,8 @@ module.exports = {
           `/test*`,
           `/project1`,
           `/project2`,
-          `/favourite_link`
+          `/favourite_link`,
+          `/self-intro`
         ]
       }
     },
