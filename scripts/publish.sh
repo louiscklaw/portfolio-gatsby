@@ -7,7 +7,4 @@ if [[ -z "$DEPLOY_TARGET" ]]; then
   exit 99
 fi
 
-# build gatsby and css
-scripts/build.sh
-
 firebase deploy --only hosting:$DEPLOY_TARGET --token $FIREBASE_TOKEN --non-interactive

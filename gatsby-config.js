@@ -57,6 +57,9 @@ module.exports = {
       }
     },
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-mdx`
+    `gatsby-plugin-mdx`,
+    {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    }
   ],
 }

@@ -6088,6 +6088,11 @@ gatsby-plugin-mdx@^1.2.13:
     unist-util-remove "^1.0.3"
     unist-util-visit "^1.4.1"
 
+gatsby-plugin-no-sourcemaps@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-2.2.0.tgz#3803380c9d9c412e70168c47c9fb85926cc29a48"
+  integrity sha512-0mSstYfw7p2fHh5zHa1mWxfAEqHHNHOwV9n8iHy+yoJb6n7+cLyfXRsQbbpEEhMLn8+N/in2WKdKdapm+65dZw==
+
 gatsby-plugin-offline@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.7.tgz#6afab6c485dcc4cbbe433232703794ca8ac8407d"
