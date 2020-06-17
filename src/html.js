@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import FacebookChatPlugin from './facebook-chat-plugin'
 import GoogleAnalytics from './components/google-analytics'
 
 export default function HTML(props) {
@@ -26,8 +27,11 @@ export default function HTML(props) {
       </head>
       <body {...props.bodyAttributes}>
 
+        {/* TODO: remove me ? */}
         <div id="fb-root"></div>
         <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="RdFRrVUi"></script>
+
+        <FacebookChatPlugin />
 
         {props.preBodyComponents}
         <div
