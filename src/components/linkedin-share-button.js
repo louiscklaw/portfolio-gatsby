@@ -11,7 +11,7 @@ function LinkedInShareButton(props){
     <>
       <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${props.location.href}`}>
         <span className={target_layout.iconWithSpace}>
-          <i class="fab fa-linkedin" aria-hidden="true" />
+          <i className="fab fa-linkedin" aria-hidden="true" />
         </span>
         <span>share to linkedin</span>
       </a>

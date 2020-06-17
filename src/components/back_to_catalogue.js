@@ -11,13 +11,13 @@ function LeftArrow(){
   if(isMobile()){
     return(
       <span className={target_layout.backLeftArrow}>
-        <i class="fas fa-chevron-circle-left fa-3x"></i>
+        <i className="fas fa-chevron-circle-left fa-3x"></i>
       </span>
     )
   }else{
     return(
       <span className={target_layout.backLeftArrow}>
-        <i class="fas fa-chevron-circle-left"></i>
+        <i className="fas fa-chevron-circle-left"></i>
       </span>
     )
   }
