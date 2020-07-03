@@ -1,11 +1,16 @@
 ### portfolio-gatsby
 
 ### to run dev locally:
-scripts/tmp_build.sh
-scripts/dev.sh
+```
+# with my dotfiles alias
+nodemonGatsbyBuild scripts/tmp_build.sh
 
+scripts/dev.sh
+```
 ### to deploy
+```
 scripts/all_deploy.sh
+```
 
 ### portfolio address:
 https://portfolio-gatsby-f56ce.web.app
