@@ -1,0 +1,22 @@
+// https://www.w3schools.com/colors/colors_names.asp
+
+digraph tracker_life_cycle {
+  ranksep = 1.5; size = "10,10";
+
+  develop [shape="box"]
+  build [shape="box"]
+  test [shape="box"]
+  deploy [shape="box"]
+
+  develop -> build -> test -> deploy
+  deploy -> develop
+
+  problem_found [ shape="box" ]
+  reproduce_problem [ shape="box" ]
+  issue_tracker [ shape="box" ]
+  draft_test_case [ shape="box" ]
+  test_result_failed [ shape="box" ]
+  add_to_main_build_script [ shape="box" ]
+  review_failed_test_case [ shape="box" ]
+  modify_and_filter_out_invalid_failed_test
+}
