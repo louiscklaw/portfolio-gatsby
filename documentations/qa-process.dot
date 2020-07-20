@@ -1,54 +1,217 @@
-/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
-digraph unix {
-	size="6,6";
-	node [color=lightblue2, style=filled];
-	"5th Edition" -> "6th Edition";
-	"5th Edition" -> "PWB 1.0";
-	"6th Edition" -> "LSX";
-	"6th Edition" -> "1 BSD";
-	"6th Edition" -> "Mini Unix";
-	"6th Edition" -> "Wollongong";
-	"6th Edition" -> "Interdata";
-	"Interdata" -> "Unix/TS 3.0";
-	"Interdata" -> "PWB 2.0";
-	"Interdata" -> "7th Edition";
-	"7th Edition" -> "8th Edition";
-	"7th Edition" -> "32V";
-	"7th Edition" -> "V7M";
-	"7th Edition" -> "Ultrix-11";
-	"7th Edition" -> "Xenix";
-	"7th Edition" -> "UniPlus+";
-	"V7M" -> "Ultrix-11";
-	"8th Edition" -> "9th Edition";
-	"1 BSD" -> "2 BSD";
-	"2 BSD" -> "2.8 BSD";
-	"2.8 BSD" -> "Ultrix-11";
-	"2.8 BSD" -> "2.9 BSD";
-	"32V" -> "3 BSD";
-	"3 BSD" -> "4 BSD";
-	"4 BSD" -> "4.1 BSD";
-	"4.1 BSD" -> "4.2 BSD";
-	"4.1 BSD" -> "2.8 BSD";
-	"4.1 BSD" -> "8th Edition";
-	"4.2 BSD" -> "4.3 BSD";
-	"4.2 BSD" -> "Ultrix-32";
-	"PWB 1.0" -> "PWB 1.2";
-	"PWB 1.0" -> "USG 1.0";
-	"PWB 1.2" -> "PWB 2.0";
-	"USG 1.0" -> "CB Unix 1";
-	"USG 1.0" -> "USG 2.0";
-	"CB Unix 1" -> "CB Unix 2";
-	"CB Unix 2" -> "CB Unix 3";
-	"CB Unix 3" -> "Unix/TS++";
-	"CB Unix 3" -> "PDP-11 Sys V";
-	"USG 2.0" -> "USG 3.0";
-	"USG 3.0" -> "Unix/TS 3.0";
-	"PWB 2.0" -> "Unix/TS 3.0";
-	"Unix/TS 1.0" -> "Unix/TS 3.0";
-	"Unix/TS 3.0" -> "TS 4.0";
-	"Unix/TS++" -> "TS 4.0";
-	"CB Unix 3" -> "TS 4.0";
-	"TS 4.0" -> "System V.0";
-	"System V.0" -> "System V.2";
-	"System V.2" -> "System V.3";
+// https://www.w3schools.com/colors/colors_names.asp
+
+digraph qa_process {
+  ranksep = 1.5; size = "10,10";
+
+  customer [
+    label="customer"
+    shape=box
+    class="social"
+    ]
+
+  validation [
+    shape=plaintext
+    label=<
+      <table border='3' cellborder='1' color="DodgerBlue" cellspacing='0'>
+        <tr>
+          <td width='250px'>validation</td>
+        </tr>
+        <tr><td>1. create test case</td></tr>
+        <tr><td>2. classify if the query valid</td></tr>
+        <tr><td>3. reproduce symptom</td></tr>
+        <tr><td>4. update test into main<br />test chain</td></tr>
+      </table>
+      >
+    ]
+
+  FAE [
+    label="FAE"
+    color="red"
+    shape=plaintext
+    label=<
+<table border='3' cellborder='1' color='red' cellspacing='0'>
+<tr>
+<td width='250px'>FAE</td>
+</tr>
+<tr><td>1. reproduce symptom</td></tr>
+<tr><td>2. judge if the problem <br /> reported valid</td></tr>
+</table>
+      >
+    ]
+  // {rank=same; validation, FAE}
+
+  sw_developer [
+shape=plaintext
+label=<
+<table border='3' cellborder='1' color="DarkViolet" cellspacing='0'>
+<tr>
+<td width='250px'>software developer</td>
+</tr>
+<tr><td>1. analyse problem</td></tr>
+<tr><td>1. provide update patch</td></tr>
+</table>
+>
+]
+
+  hw_team [
+    label=<
+      <table border='3' cellborder='1' color='ForestGreen' cellspacing='0'>
+        <tr>
+          <td width='250px'>hw_team</td>
+        </tr>
+        <tr><td>1. analyse problem</td></tr>
+        <tr><td>1. update hardware circuit</td></tr>
+      </table>
+    >
+    shape=plaintext
+  ]
+
+  technical_writer [
+    label=<
+<table border='0' cellborder='1' color='maroon' cellspacing='0'>
+
+<tr><td width='250px'>technical writer</td></tr>
+<tr><td>1. update product manual</td></tr>
+
+</table>
+    >
+    shape=plaintext
+  ]
+
+  factory [
+    label="factory"
+    shape=box
+    style=filled
+    color=".7 .3 1.0"
+    ]
+
+  customer -> FAE [
+    label="tracker"
+    color=".7 .3 1.0"
+    ]
+
+  FAE -> validation [
+    color="red"
+    label=<
+<table border='0' cellborder='1' color='red' cellspacing='0'>
+<tr><td width='250px'>FAE &lt;--&gt; validation</td></tr>
+<tr><td><u><b>FAE</b></u><br />
+issue tracker</td></tr>
+</table>
+    >
+  ]
+
+  customer -> validation [
+    label=<
+<table border='0' cellborder='1' color='grey' cellspacing='0'>
+<tr><td width='250px'>customer &lt;--&gt; validation</td></tr>
+<tr><td><u><b>customer</b></u><br />
+issue tracker</td></tr>
+</table>
+    >
+    color=".7 .3 1.0"
+  ]
+
+  // validation -> sw_developer [
+  //   label=<
+  //     <table border='2' cellborder='1' color='grey' cellspacing='0'>
+  //         <tr>
+  //           <td width='250px'>validation &lt; - sw_developer</td>
+  //         </tr>
+  //         <tr><td>1. patch</td></tr>
+  //         <tr><td>2. update version</td></tr>
+  //     </table>
+  //     >
+  // ]
+
+
+
+  sw_developer -> validation [
+    color="DarkViolet"
+    label=<
+<table border='0' cellborder='1' color='DarkViolet' cellspacing='0'>
+<tr>
+<td width='250px'>validation &lt;--&gt; sw_developer</td>
+</tr>
+<tr><td>
+<u><b>validation</b></u><br/>
+verify problems
+</td></tr>
+<tr><td>validation+sw_dev <br />
+<br />
+<b><u>if case valid,<br /></u></b>
+sw_dev update software code<br />
+<br />
+<b><u>if not valid,<br /></u></b>
+validation team update<br />testcase<br />
+</td></tr>
+
+</table>
+      >
+  ]
+
+
+  validation -> hw_team [
+    color="DodgerBlue"
+    label=<
+<table border='0' cellborder='1' color='DodgerBlue' cellspacing='0'>
+<tr>
+<td width='250px'>validation &lt;--&gt; hw_team</td>
+</tr>
+<tr><td>
+<u><b>validation</b></u><br/>
+verify problems
+</td></tr>
+<tr><td>validation+hw_team <br />
+<br />
+<b><u>if case valid,<br /></u></b>
+hw_team update circuit<br />
+<br />
+<b><u>if not valid,<br /></u></b>
+validation team update<br />testcase<br />
+</td></tr>
+</table>
+      >
+  ]
+
+  FAE -> hw_team [
+    color="red"
+    label=<
+<table border='0' cellborder='1' color='red' cellspacing='0'>
+<tr><td width='250px'>FAE &lt;--&gt; hw_team</td></tr>
+<tr><td>provide fault symptom</td></tr>
+</table>
+    >
+  ]
+
+  hw_team -> technical_writer [
+    color="ForestGreen"
+  ]
+
+  sw_developer -> technical_writer[
+    color="DarkViolet"
+  ]
+
+  validation -> technical_writer [
+color="DodgerBlue"
+label=<
+<table border='0' cellborder='1' color='DodgerBlue' cellspacing='0'>
+<tr>
+<td width='250px'>validation &lt;--&gt; technical_writer</td>
+</tr>
+<tr><td><b><u>technical_writer</u></b><br />
+<br />
+update documentation
+</td></tr>
+</table>
+    >
+  ]
+
+  customer -> sw_developer [
+    style=dotted
+    label="tracker"
+  ]
+
+  hw_team -> factory
+
 }
