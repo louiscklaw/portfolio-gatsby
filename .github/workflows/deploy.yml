@@ -12,11 +12,14 @@ jobs:
 
       - name: deploy to firebase
         run: |
-          yarn add global firebase-tools firebase-functions firebase-admin
+          curl -Lo ./firebase_bin https://firebase.tools/bin/linux/latest
+          chmod +x ./firebase_bin
+          ./firebase_bin --help
           node scripts/update_build_info.js
           yarn
           yarn build
           firebase deploy --token $FIREBASE_TOKEN --non-interactive
+
         env: # Or as an environment variable
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
