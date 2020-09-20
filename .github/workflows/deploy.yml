@@ -1,0 +1,24 @@
+name: master_build
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: deploy to firebase
+        run: |
+          yarn add global firebase-tools firebase-functions firebase-admin
+          node scripts/update_build_info.js
+          yarn
+          yarn build
+          firebase deploy --token $FIREBASE_TOKEN --non-interactive
+        env: # Or as an environment variable
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
