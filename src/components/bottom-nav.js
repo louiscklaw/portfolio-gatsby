@@ -7,6 +7,7 @@ import TravisBuildInfo from './travis_build_info'
 import SourceLink from './source_link'
 import SimpleCredit from './simple_credit'
 import LastBuild from './last_build'
+import GithubActionsBuildInfo from './github_actions_build_info'
 
 
 function BottomNav(){
@@ -15,7 +16,7 @@ function BottomNav(){
   return(
     <div className={target_layout.bottomNav}>
       <ConnectionList />
-      <TravisBuildInfo />
+      <GithubActionsBuildInfo />
       <SourceLink />
       <SimpleCredit />
       <LastBuild />
