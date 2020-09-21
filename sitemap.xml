@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://portfolio.louislabs.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-list/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/credits/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/allwinner-v3s-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/appium-behave-notes/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/hk-data-searcher/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/hko-weather-bot/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/my-linux-toolbox/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/opencv-car-counting-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/pet-projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/portfolio-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/printer-board-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/rthk31-rthk32-linux-viewer/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/slic3r-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/tappy-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/trading-view-dashboard/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/traefik-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/voron-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://portfolio.louislabs.com/project-details/youtube-splitview-tryout/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>

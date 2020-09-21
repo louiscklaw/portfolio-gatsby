@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfolio.louislabs.com/sitemap.xml
+Host: https://portfolio.louislabs.com
