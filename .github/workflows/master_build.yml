@@ -43,7 +43,7 @@ jobs:
           github-build-merger/test.sh
 
   merge:
-    needs: [test_merger]
+    needs: [build, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
