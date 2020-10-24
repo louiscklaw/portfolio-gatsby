@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          scripts/grep_readme.sh
           yarn
           node scripts/update_build_info.js
           yarn build
