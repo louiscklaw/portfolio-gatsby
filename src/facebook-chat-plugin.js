@@ -30,8 +30,8 @@ function FacebookChatPlugin(){
         attribution="setup_tool"
         page_id="234349223396657"
         theme_color="#2980b9"
-        logged_in_greeting="hello 你好呀我叫 louis 請問有咩我可以幫到你？"
-        logged_out_greeting="hello 你好呀我叫 louis 請問有咩我可以幫到你？"
+        logged_in_greeting="你好啊! That means hello if you don't speak Cantonese ;)"
+        logged_out_greeting="你好啊! That means hello if you don't speak Cantonese ;)"
         greeting_dialog_display="show"
         >
       </div>
