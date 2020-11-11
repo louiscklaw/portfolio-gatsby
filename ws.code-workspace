@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../hk-data-search"
+		},
+		{
+			"path": "../puppeteer-playlist"
+		},
+		{
+			"path": "../daily-job-search"
 		}
 	],
 	"settings": {}
