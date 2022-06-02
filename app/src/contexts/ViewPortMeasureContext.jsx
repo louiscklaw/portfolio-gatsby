@@ -2,7 +2,13 @@ import * as React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
-export const ViewPortMeasureContext = React.createContext();
+const defaultState = {
+  xs_up: true,
+  md_up: false,
+  xl_up: false,
+};
+
+export const ViewPortMeasureContext = React.createContext(defaultState);
 
 export function ViewPortMeasureProvider({ children }) {
   const theme = useTheme();

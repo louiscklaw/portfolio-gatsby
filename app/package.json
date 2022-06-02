@@ -30,6 +30,11 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "clean": "rimraf public .cache",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "gitUpdate": "git add . && git commit -m\"update portfolio-gatsby,\" && git push"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }

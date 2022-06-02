@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { FiMenu } from "react-icons/fi";
+
 import { ViewPortMeasureContext } from "../../contexts/ViewPortMeasureContext";
 // import Link from "../../src/Link";
 import Link from "../Link";
@@ -10,7 +11,8 @@ import Link from "../Link";
 export default function NavMenu({ setMobileMenuOpen }) {
   const { palette } = useTheme();
   const theme = useTheme();
-  const { md_up } = React.useContext(ViewPortMeasureContext);
+  const { md_up } = { md_up: true };
+
   return (
     <>
       <Stack
