@@ -1,0 +1,35 @@
+{
+  "name": "gatsby",
+  "version": "5.0.0",
+  "private": true,
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ],
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "gatsby": "latest",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-react-svg": "^3.1.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "react": "latest",
+    "react-div-100vh": "^0.7.0",
+    "react-dom": "latest",
+    "react-helmet": "latest",
+    "react-icons": "^4.4.0",
+    "react-markdown": "^8.0.3",
+    "react-sticky-box": "^1.0.2",
+    "rehype-raw": "^6.1.1",
+    "remark-frontmatter": "^4.0.1",
+    "remark-gfm": "^3.0.1"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  }
+}
